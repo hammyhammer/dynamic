@@ -1,12 +1,15 @@
-# Project Overview
-
 ## Project Name
 
-BMI Calculator 
+Dynamic
 
 ## Project Description
 
-This web application allows a user to determine their BMI. The user can select between Imperial or Metric system of measurements to input their values. After entering it, they will be shown their results and how to interpret them and its significance. The application will offer further insight with references and resources. 
+Upon visiting Dynamic, guests will be offered a training set to do (default to beginner). Afterwards they will offered to register to create and record their own training sets.
+
+Users can select their difficultly levels. Users will be offered either the given training set of the day (and be allowed to modify it) or they can design their own training set to complete. In addition, they can leave notes on specific movements, i.e. how much weight they used for that one movement, they can edit or delete these entries. 
+
+Users can post suggestion movements that we can consider.
+
 
 ## Wireframes
 
