@@ -17,7 +17,6 @@ Users can post suggestion movements that we can consider.
 - Full CRUD on backend (With RESTful API)
 - Using Flexbox to style with style components
 - Base Beginner Level 
-- 
 
 
 <br>
