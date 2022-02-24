@@ -133,8 +133,7 @@ src
 ### Server (Back End)
 
 #### ERD Model
-
-[ERD Sample](https://drive.google.com/file/d/1vpsQez2IdBhQ0ZldFkGd28uHz7ByhV1Q/view?usp=sharing)
+[Here](https://drive.google.com/file/d/1vpsQez2IdBhQ0ZldFkGd28uHz7ByhV1Q/view?usp=sharing) is the link to my ERD model
 <br>
 
 ***
@@ -145,7 +144,7 @@ src
 - Experience Level logic to autofill proper exercises
 - Utilize transition styling 
 
-***
+<!-- ***
 
 ## Code Showcase
 
@@ -153,4 +152,4 @@ src
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> Use this section to list of all major issues encountered and their resolution. -->
