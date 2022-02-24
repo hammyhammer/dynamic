@@ -18,7 +18,7 @@ class MovementsController < ApplicationController
     @movement = Movement.new(movement_params)
 
     if @movement.save
-      render json: @movement, status: :created, location: @movement
+      render json: @movement, status: :created
     else
       render json: @movement.errors, status: :unprocessable_entity
     end
@@ -46,6 +46,6 @@ class MovementsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def movement_params
-      params.require(:movement).permit(:name, :type, :difficultly, :image)
+      params.require(:movement).permit(:name, :category, :difficultly, :image)
     end
 end
