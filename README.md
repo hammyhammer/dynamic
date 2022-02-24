@@ -4,21 +4,16 @@ Dynamic
 
 ## Project Description
 
-Upon visiting Dynamic, guests will be offered a training set to do (default to beginner). Afterwards they will offered to register to create and record their own training sets.
-
-Users can select their difficultly levels. Users will be offered either the given training set of the day (and be allowed to modify it) or they can design their own training set to complete. In addition, they can leave notes on specific movements, i.e. how much weight they used for that one movement, they can edit or delete these entries. 
-
-Users can post suggestion movements that we can consider.
 
 
 ## Wireframes
 
 <!-- Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe. -->
-[Here](https://whimsical.com/bmi-calculator-9aqjBs6qNhzLkJGxnhQvn9) is a link that will direct you to my vision for both my browser and mobile look of this application. 
+
 
 ## Component Hierarchy
 <!-- Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example. -->
-[Here](https://whimsical.com/bmi-component-hierarchy-VmLjp5FZY844kytW2SzW2o) is a link that shows us our component hierarchy.
+
 
 ## API and Data Sample
 
@@ -159,3 +154,113 @@ Users can post suggestion movements that we can consider.
 - Not entirely sure how I can go about having a one time submission per user.
 - Figuring out to turn a user input from 5 foot 9 to metric units.
 - Styling and figuring out how to include references to the text
+
+
+
+## Overview
+
+**Dynamic** 
+
+Upon visiting Dynamic, guests will be offered a training set to do (default to beginner). Afterwards they will offered to register to create and record their own training sets.
+
+Users can select their difficultly levels. Users will be offered either the given training set of the day (and be allowed to modify it) or they can design their own training set to complete. In addition, they can leave notes on specific movements, i.e. how much weight they used for that one movement, they can edit or delete these entries. 
+
+Users can post suggestion movements that we can consider.
+
+
+## MVP
+
+> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+
+_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+
+<br>
+
+### Goals
+
+- _Lorem ipsum, dolor sit amet,_
+- _consectetur adipiscing elit._
+- _Phasellus dapibus fermentum risus vitae bibendum._
+- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
+- _etc._
+
+<br>
+
+### Libraries and Dependencies
+
+> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
+|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+
+<br>
+
+### Client (Front End)
+
+#### Wireframes
+[Here](https://whimsical.com/dynamic-TiNQ8pmBberzAgX2UjTs13) is a link that will direct you to my vision for both my browser and mobile look of this application. 
+
+#### Component Tree
+[Here](https://whimsical.com/movement-E3U8g7Jwgb29kLT8mLo9DP) is a link that shows the component hierarchy.
+
+#### Component Architecture
+
+> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+
+``` structure
+
+src
+|__ assets/
+      |__ fonts
+      |__ graphics
+      |__ images
+      |__ mockups
+|__ components/
+      |__ Header.jsx
+|__ services/
+
+```
+
+#### Time Estimates
+
+> Use this section to estimate the time necessary to build out each of the components you've described above.
+
+| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+
+> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
+<br>
+
+### Server (Back End)
+
+#### ERD Model
+
+> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+
+[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+<br>
+
+***
+
+## Post-MVP
+
+> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
+***
+
+## Code Showcase
+
+> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
+## Code Issues & Resolutions
+
+> Use this section to list of all major issues encountered and their resolution.
