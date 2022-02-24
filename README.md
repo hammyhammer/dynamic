@@ -10,9 +10,13 @@ Users can post suggestion movements that we can consider.
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+- User aunthentication
+- Randomized Training Set
+- Media Query
+- Full CRUD on front end (With React)
+- Full CRUD on backend (With RESTful API)
+- Using Flexbox to style with style components
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
@@ -22,21 +26,18 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 - Allow users to keep track of their training
 - Have a randomized Training Set
 - Have user authentication 
-- _etc._
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       |        Front-end framework with JavaScript |
 |   React Router   |       Handles changing between screens.    |
-|     Ruby         | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Ruby         | Back-end language for server side logic.   |
 |     Rails        |       Backend library for SQL database     |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -100,8 +101,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Migrations (BE)     |    H     |     0.5 hrs    |     TBA       |     TBD    |
@@ -135,16 +134,16 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD Sample](https://drive.google.com/file/d/1vpsQez2IdBhQ0ZldFkGd28uHz7ByhV1Q/view?usp=sharing)
 <br>
 
 ***
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Customization for training sets for users
+- Experience Level logic to autofill proper exercises
+- Utilize transition styling 
 
 ***
 
