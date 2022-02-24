@@ -2,7 +2,7 @@
 
 **Dynamic** 
 
-Upon visiting Dynamic, guests will be offered a training set to do (default to beginner). Afterwards they will offered to register to create and record their own training sets.
+Upon visiting Dynamic, guests will be offered a training set to do (default to beginner). Afterwards they will offered to register to create and record their own training sets. It is primarily a 
 
 Users can select their difficultly levels. Users will be offered either the given training set of the day (and be allowed to modify it) or they can design their own training set to complete. In addition, they can leave notes on specific movements, i.e. how much weight they used for that one movement, they can edit or delete these entries. 
 
@@ -16,6 +16,8 @@ Users can post suggestion movements that we can consider.
 - Full CRUD on front end (With React)
 - Full CRUD on backend (With RESTful API)
 - Using Flexbox to style with style components
+- Base Beginner Level 
+- 
 
 
 <br>
@@ -122,11 +124,16 @@ src
 | Journal Edit (FE)   |    H     |     2.5 hrs    |     TBA       |     TBD     |
 | Journal Delete (FE) |    H     |     2.5 hrs    |     TBA       |     TBD     |
 | Exercise Post (FE)  |    H     |     2.5 hrs    |     TBA       |     TBA     |
+| Header.jsx (FE)     |    H     |     1.5 hrs    |     TBA       |     TBA     |
+| Footer.jsx (FE)     |    H     |     1.5 hrs    |     TBA       |     TBA     |
+| Navbar.jsx (FE)     |    H     |     2 hrs      |     TBA       |     TBA     |
+| Layout.jsx (FE)     |    H     |     2 hrs      |     TBA       |     TBA     |
+| Card.jsx (FE)       |    H     |     1 hrs      |     TBA       |     TBA     |
 | Media Query         |    H     |     3 hrs      |     TBA       |     TBA     |
 | Experience Level(FE)|    L     |     3 hrs      |     TBA       |     TBA     |
 | Dropdown Selection  |    L     |     3 hrs      |     TBA       |     TBA     |
 | Customization       |    L     |     3 hrs      |     TBA       |     TBD     |
-| TOTAL               |          |     49 hrs     |     TBA       |     TBD     |
+| TOTAL               |          |     56 hrs     |     TBA       |     TBD     |
 
 <br>
 
@@ -143,6 +150,8 @@ src
 - Customization for training sets for users
 - Experience Level logic to autofill proper exercises
 - Utilize transition styling 
+- Randomizing sets and reps (Experience Level)
+- Time keeping
 
 <!-- ***
 
