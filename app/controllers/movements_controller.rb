@@ -10,15 +10,15 @@ class MovementsController < ApplicationController
 
   # GET /movements/1
   def show
-    render json: @movement
+    render json: @movement, include: :reviews
   end
 
   # POST /movements
   def create
     @movement = Movement.new(movement_params)
-
+    @movement.user = @current_user
     if @movement.save
-      render json: @movement, status: :created
+      render json: @movement, status: :created, location: @product
     else
       render json: @movement.errors, status: :unprocessable_entity
     end
@@ -36,6 +36,7 @@ class MovementsController < ApplicationController
   # DELETE /movements/1
   def destroy
     @movement.destroy
+    render json: @product
   end
 
   private

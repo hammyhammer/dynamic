@@ -1,11 +1,13 @@
 class NotesController < ApplicationController
   before_action :set_note, only: %i[ show update destroy ]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /notes
   def index
+    @movements = Movement.find(params[:movement_id])
     @notes = Note.all
 
-    render json: @notes
+    render json: @notes, include: :user
   end
 
   # GET /notes/1
@@ -16,7 +18,8 @@ class NotesController < ApplicationController
   # POST /notes
   def create
     @note = Note.new(note_params)
-
+    @note.user = @current_user
+    @note.movement_id = params[:movement_id]
     if @note.save
       render json: @note, status: :created
     else
@@ -36,6 +39,7 @@ class NotesController < ApplicationController
   # DELETE /notes/1
   def destroy
     @note.destroy
+    render json: @review
   end
 
   private
