@@ -220,10 +220,44 @@ src
       |__ graphics
       |__ images
       |__ mockups
+|__ containers/
+      |__ MovementContainer
+          |__ MovementContainer.jsx
+      |__ JournalContainer
+          |__ JournalContainer.jsx
 |__ components/
       |__ Header.jsx
-|__ services/
+      |__ Nav.jsx
+      |__ Layout.jsx
+      |__ Footer.jsx
+|__ screens/
+      |__ Home 
+          |__ Home.jsx
+      |__ PostExercise
+          |__ PostExercise.jsx
+      |__ DetailsExercise
+          |__ DetailsExercise.jsx
+      |__ Customization
+          |__Customization.jsx
+      |__ Profile
+          |__ Profile.jsx
+      |__ Registeration
+          |__ Registeration.jsx
+      |__ Login
+          |__ Login.jsx
+      |__ Training
+          |__Training.jsx
+      |__ JournalPost
+          |__ JournalPost.jsx
+      |__ JournalEdit
+          |__ JournalEdit.jsx
+      |__ JournalDelete
+          |__ JournalDelete.jsx
 
+|__ services/
+      |__apiConfig.js
+      |__movement.js
+      |__journal.js
 ```
 
 #### Time Estimates
