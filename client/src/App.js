@@ -29,7 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login setCurrentUser={setCurrentUser} />} />
         <Route path="/register" element={<div>Register page</div>} />
-        <Route path="/training" element={<div>Login in page</div>} />
+        <Route path="/training" element={<div>Display training sets</div>} />
 
       </Routes>
 
