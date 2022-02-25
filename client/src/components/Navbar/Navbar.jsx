@@ -1,12 +1,19 @@
-export default function Navbar(props) {
+import { useState } from "react"
 
+export default function Navbar(props) {
+  const [currentUser, setCurrentUser] = useState(null)
+
+  const logout = () => {
+    localStorage.removeItem(`authToken`)
+    setCurrentUser(null)
+  }
 
   return (
     <div>
       {props.currentUser ?
         <>
           <h5>Yous logged in</h5>
-          <button onClick={props.logout}>Logout</button>
+          <button onClick={logout}>Logout</button>
         </>
         :
         <>

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Layout from '../../components/Layout/Layout'
 export default function HomeMovements() {
   return (
-    <div>
+    <Layout>
       <div>
         Training Set of the Day
       </div>
@@ -10,6 +10,6 @@ export default function HomeMovements() {
       <div>
         Customize your Training
       </div>
-    </div>
+    </Layout>
   )
 }

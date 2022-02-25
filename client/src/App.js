@@ -18,19 +18,14 @@ function App() {
     getUser()
   }, [])
 
-  const logout = () => {
-    localStorage.removeItem(`authToken`)
-    setCurrentUser(null)
-  }
-
   return (
 
     <div className="App">
-      <Navbar currentUser={currentUser} logout={logout} />
+      {/* <Navbar currentUser={currentUser} logout={logout} /> */}
       <Routes>
         <Route path="/" element={<Login setCurrentUser={setCurrentUser} />} />
         <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
-        <Route path="/movement/*" element={<MovementContainer />} />
+        <Route path="/movements/*" element={<MovementContainer currentUser={currentUser} />} />
 
       </Routes>
 

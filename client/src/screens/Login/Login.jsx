@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { loginUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
 import logincss from './Login.module.css'
-// import Register from '../Register/Register';
 export default function Login(props) {
 
   const [username, setUsername] = useState('');
