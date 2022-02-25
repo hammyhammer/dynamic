@@ -1,9 +1,18 @@
-import { Link } from 'react-router-dom';
-
-export default function Navbar() {
+export default function Navbar(props) {
 
 
   return (
-    <div>Welcome to Dynamic</div>
+    <div>
+      {props.currentUser ?
+        <>
+          <h5>Yous logged in</h5>
+          <button onClick={props.logout}>Logout</button>
+        </>
+        :
+        <>
+          <h5>You are a guest</h5>
+        </>
+      }
+    </div>
   )
 }
