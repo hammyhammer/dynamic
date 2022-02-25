@@ -17,7 +17,7 @@ export default function Login(props) {
     }
     const res = await loginUser(user)
     props.setCurrentUser(res)
-    navigate('/training')
+    navigate('/movements')
   }
 
   const registerPath = () => {

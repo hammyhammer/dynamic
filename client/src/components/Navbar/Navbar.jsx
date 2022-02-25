@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { Link } from 'react-router-dom'
 export default function Navbar(props) {
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -17,7 +17,8 @@ export default function Navbar(props) {
         </>
         :
         <>
-          <h5>You are a guest</h5>
+          <h5>Dynamic</h5>
+          <Link to='/register'>Sign up!</Link>
         </>
       }
     </div>
