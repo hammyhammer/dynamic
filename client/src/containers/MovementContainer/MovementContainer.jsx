@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 import HomeMovements from "../../screens/HomeMovements/HomeMovements";
 import { getAllMovements } from "../../services/movements";
-
+import MovementsRandom from '../../screens/MovementsRandom/MovementsRandom'
 export default function MovementContainer(props) {
   const [movements, setMovements] = useState([]);
 
@@ -17,7 +17,8 @@ export default function MovementContainer(props) {
   return (
     <div>
       <Routes>
-        <Route to="/" element={<HomeMovements movements={movements} currentUser={props.currentUser} />} />
+        <Route path="/" element={<HomeMovements movements={movements} currentUser={props.currentUser} />} />
+        <Route path="/random" element={<MovementsRandom movements={movements} currentUser={props.currentUser} />} />
       </Routes>
     </div>
   )

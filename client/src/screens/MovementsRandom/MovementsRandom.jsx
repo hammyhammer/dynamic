@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Movements() {
+export default function Movements(props) {
   return (
     <div>
       <h3>Assigned Movements by Dynamic</h3>
