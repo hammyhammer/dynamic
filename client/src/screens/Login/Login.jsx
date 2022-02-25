@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { loginUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
 import logincss from './Login.module.css'
+// import Register from '../Register/Register';
 export default function Login(props) {
 
   const [username, setUsername] = useState('');
@@ -20,6 +21,10 @@ export default function Login(props) {
     navigate('/training')
   }
 
+  const registerPath = () => {
+    navigate('/register')
+  }
+
   return (
     <div>
       <h3 className={logincss.welcome}>Welcome to Dynamic</h3>
@@ -33,7 +38,7 @@ export default function Login(props) {
         </form>
       </div>
       <div>New here? Signup!</div>
-      <button>Register</button>
+      <button onClick={registerPath}>Register</button>
       <div>Continue as Guest</div>
     </div>
   )

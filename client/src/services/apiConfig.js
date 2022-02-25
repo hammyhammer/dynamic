@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://dynamic-fitness-api.herokuapp.com/';
 
 export const api = axios.create({
   baseUrl: baseUrl
