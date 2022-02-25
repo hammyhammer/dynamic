@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^0.26.0",
+    "react-router-dom": "^6.2.1"
+  }
+}
