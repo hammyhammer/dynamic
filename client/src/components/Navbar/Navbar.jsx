@@ -12,7 +12,7 @@ export default function Navbar(props) {
     <div>
       {props.currentUser ?
         <>
-          <h5>Yous logged in</h5>
+          <h5>Dynamic</h5>
           <button onClick={logout}>Logout</button>
         </>
         :

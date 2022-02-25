@@ -18,7 +18,7 @@ export default function Register(props) {
     }
     const res = await registerUser(user)
     props.setCurrentUser(res)
-    navigate('/training')
+    navigate('/movements')
   }
 
 
