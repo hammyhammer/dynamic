@@ -4,7 +4,7 @@ import { verify } from './services/users';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Register from './screens/Register/Register'
-import TrainingContainer from './containers/TrainingContainer/TrainingContainer'
+import MovementContainer from './containers/MovementContainer/MovementContainer'
 import Login from './screens/Login/Login';
 function App() {
 
@@ -30,8 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login setCurrentUser={setCurrentUser} />} />
         <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
-        <Route path="/training" element={<div>Display training sets</div>} />
-        <Route path="/training/*" element={<TrainingContainer />} />
+        <Route path="/movement/*" element={<MovementContainer />} />
 
       </Routes>
 
