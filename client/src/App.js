@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { verify } from './services/users';
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
+import Register from './screens/Register/Register'
 
 import Login from './screens/Login/Login';
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Navbar currentUser={currentUser} logout={logout} />
       <Routes>
         <Route path="/" element={<Login setCurrentUser={setCurrentUser} />} />
-        <Route path="/register" element={<div>Register page</div>} />
+        <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
         <Route path="/training" element={<div>Display training sets</div>} />
 
       </Routes>

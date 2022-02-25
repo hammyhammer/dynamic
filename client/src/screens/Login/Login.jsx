@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { loginUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
-
+import logincss from './Login.module.css'
 export default function Login(props) {
 
   const [username, setUsername] = useState('');
@@ -22,7 +22,7 @@ export default function Login(props) {
 
   return (
     <div>
-      <h3>Welcome to Dynamic</h3>
+      <h3 className={logincss.welcome}>Welcome to Dynamic</h3>
       <div>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
