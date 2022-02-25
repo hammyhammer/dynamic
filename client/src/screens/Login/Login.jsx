@@ -23,6 +23,9 @@ export default function Login(props) {
   const registerPath = () => {
     navigate('/register')
   }
+  const guestPath = () => {
+    navigate('/movements')
+  }
 
   return (
     <div>
@@ -39,6 +42,7 @@ export default function Login(props) {
       <div>New here? Signup!</div>
       <button onClick={registerPath}>Register</button>
       <div>Continue as Guest</div>
+      <button onClick={guestPath}>Guest</button>
     </div>
   )
 }

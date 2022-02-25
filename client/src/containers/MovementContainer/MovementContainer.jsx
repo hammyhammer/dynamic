@@ -18,7 +18,7 @@ export default function MovementContainer(props) {
     <div>
       <Routes>
         <Route path="/" element={<HomeMovements movements={movements} currentUser={props.currentUser} />} />
-        <Route path="/random" element={<MovementsRandom movements={movements} currentUser={props.currentUser} />} />
+        <Route path="/movements/random" element={<MovementsRandom movements={movements} currentUser={props.currentUser} />} />
       </Routes>
     </div>
   )
