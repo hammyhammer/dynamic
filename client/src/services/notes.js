@@ -1,21 +1,21 @@
 import { api } from "./apiConfig"
 
-export const getProductReviews = async (product_id) => {
-  const res = await api.get(`/products/${product_id}/reviews`)
+export const getUserNotes = async (user_id) => {
+  const res = await api.get(`/users/${user_id}/notes`)
   return res.data
 }
 
-export const createReview = async (product_id, reviewData) => {
-  const res = await api.post(`/products/${product_id}/reviews`, { review: reviewData })
+export const createNote = async (user_id, noteData) => {
+  const res = await api.post(`/users/${user_id}/notes`, { note: noteData })
   return res.data
 }
 
-export const updateReview = async (product_id, review_id, reviewData) => {
-  const res = await api.put(`/products/${product_id}/reviews/${review_id}`, { review: reviewData })
+export const updateNote = async (user_id, note_id, noteData) => {
+  const res = await api.put(`/users/${user_id}/notes/${note_id}`, { note: noteData })
   return res.data
 }
 
-export const deleteReview = async (product_id, review_id) => {
-  const res = await api.delete(`/products/${product_id}/reviews/${review_id}`)
+export const deleteNote = async (user_id, note_id) => {
+  const res = await api.delete(`/users/${user_id}/notes/${note_id}`)
   return res.data
 }
