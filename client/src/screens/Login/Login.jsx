@@ -30,17 +30,20 @@ export default function Login(props) {
   return (
     <div>
       <h3 className={logincss.welcome}>Welcome to Dynamic</h3>
-      <div>
+      <div className={logincss.form_data}>
         <form onSubmit={handleSubmit}>
-          <input type="text" value={username} placeholder="Enter your username" onChange={(event) => setUsername(event.target.value)} />
+          <input className={logincss.username} type="text" value={username} placeholder="Enter your username" onChange={(event) => setUsername(event.target.value)} />
           <br />
-          <input type="password" value={password} placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
+          <input className={logincss.password} type="password" value={password} placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
+          <br />
           <button>Login</button>
 
 
         </form>
       </div>
+      <br />
       <button onClick={registerPath}>New here? Signup!</button>
+      <br />
       <button onClick={guestPath}>Continue as Guest</button>
     </div>
   )

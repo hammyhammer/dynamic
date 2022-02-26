@@ -4,6 +4,20 @@
 
 
 .welcome {
+  margin: 20px 0px;
   color: pink;
+}
+
+.username {
+  margin: 10px 0px;
+}
+
+.password {
+  margin: 10px 0px;
+}
+
+.form_data {
+  margin: 10px;
+
 }
 
