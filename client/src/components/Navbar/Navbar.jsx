@@ -6,7 +6,7 @@ export default function Navbar(props) {
   const [currentUser, setCurrentUser] = useState(null)
 
   const navigate = useNavigate()
-
+  const token = localStorage.getItem('token')
   const logout = () => {
     localStorage.removeItem(`authToken`)
     setCurrentUser(null)
@@ -15,7 +15,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-      {currentUser ?
+      {token ?
         <>
           <h5>Dynamic</h5>
           <Link to='/register'>Sign up!</Link>
