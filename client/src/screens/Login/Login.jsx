@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { loginUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
 import logincss from './Login.module.css'
-export default function Login(props) {
 
+export default function Login(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -40,10 +40,8 @@ export default function Login(props) {
 
         </form>
       </div>
-      <div>New here? Signup!</div>
-      <button onClick={registerPath}>Register</button>
-      <div>Continue as Guest</div>
-      <button onClick={guestPath}>Guest</button>
+      <button onClick={registerPath}>New here? Signup!</button>
+      <button onClick={guestPath}>Continue as Guest</button>
     </div>
   )
 }

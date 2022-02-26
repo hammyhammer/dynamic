@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Register from './screens/Register/Register'
 import MovementContainer from './containers/MovementContainer/MovementContainer'
 import Login from './screens/Login/Login';
-function App(props) {
+function App() {
 
   const [currentUser, setCurrentUser] = useState(null)
   useEffect(() => {

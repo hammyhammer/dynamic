@@ -25,9 +25,9 @@ export default function Register(props) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={username} onChange={(event) => setUsername(event.target.value)} />
-        <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-        <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+        <input type="text" value={username} placeholder="Username" onChange={(event) => setUsername(event.target.value)} />
+        <input type="email" value={email} placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
+        <input type="password" value={password} placeholder="Password" onChange={(event) => setPassword(event.target.value)} />
         <button>Register</button>
 
 

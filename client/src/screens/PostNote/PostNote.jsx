@@ -17,11 +17,13 @@ export default function PostNote(props) {
 
   return (
     <div>
-      {token ? <form onSubmit={handleSubmit}>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <input type="text" value={content} onChange={(e) => setContent(e.target.value)} />
-        <button>Leave a Note</button>
-      </form> :
+      {token ?
+        <form onSubmit={handleSubmit}>
+          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" value={content} onChange={(e) => setContent(e.target.value)} />
+          <button>Leave a Note</button>
+        </form>
+        :
         <p>Only Users can leave a note</p>
       }
     </div>
