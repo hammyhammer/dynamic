@@ -26,6 +26,7 @@ export default function Notes(props) {
                     <p>Date: {note.created_at}</p>
                   </div>
                   <div>
+                    <button onClick={() => props.handleNoteEdit(note.id)}>Edit</button>
                     <button onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
                   </div>
                 </>
