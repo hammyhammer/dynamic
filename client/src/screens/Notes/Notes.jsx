@@ -3,6 +3,7 @@ import { verify } from '../../services/users'
 
 export default function Notes(props) {
   const [currentUser, setCurrentUser] = useState(null)
+
   useEffect(() => {
     const getUser = async () => {
       const user = await verify()
@@ -10,13 +11,14 @@ export default function Notes(props) {
     }
     getUser()
   }, [])
-  console.log(props.notes.user_id)
+
+  console.log(props.notes.id)
   console.log(currentUser)
   return (
 
     <div>
 
-      {props.currentUser?.id === props.notes.user_id ?
+      {props.currentUser?.id === props.notes.id ?
         <>
           {
             props.notes &&

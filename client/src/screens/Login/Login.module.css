@@ -4,11 +4,13 @@
 
 
 .welcome {
+  font-size: 8vw;
   margin: 20px 0px;
   color: pink;
 }
 
 .username {
+  
   margin: 10px 0px;
 }
 
