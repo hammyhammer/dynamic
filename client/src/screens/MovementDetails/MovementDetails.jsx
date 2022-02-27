@@ -31,17 +31,25 @@ export default function MovementDetails(props) {
   const handleNoteDelete = async (note_id) => {
     await deleteNote(id, note_id)
   }
-
+  // console.log(movement)
   return (
     <Layout>
       <div>
+        <h3>{movement?.name}</h3>
+        <h4>{movement?.category}</h4>
+        <img src={movement?.image} />
 
-        <h3>{movement.name}</h3>
-        <h4>{movement.category}</h4>
-        <img src={movement.image} />
+        {props.currentUser ?
+          <>
+            <PostNote handleNoteCreate={handleNoteCreate} />
+            <Notes notes={notes} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+          </>
+          :
+          <p>Only users can leave a note</p>
 
-        <PostNote handleNoteCreate={handleNoteCreate} />
-        <Notes notes={notes} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+
+        }
+
       </div>
     </Layout>
   )

@@ -6,6 +6,7 @@ export default function PostNote(props) {
   const [content, setContent] = useState('')
 
   const [currentUser, setCurrentUser] = useState(null)
+
   useEffect(() => {
     const getUser = async () => {
       const user = await verify()
