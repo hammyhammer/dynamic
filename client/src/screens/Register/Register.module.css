@@ -5,26 +5,38 @@
 
 .header {
   font-size: 10vw;
+  font-family: "Avenir";
+
 }
 
 .username {
   font-size: 7.5vw;
   margin: 20px 0px;
+  border-radius: 7px;
 }
 
 .email {
   font-size: 7.5vw;
   margin: 20px 0px;
+  border-radius: 7px;
 
 }
 
 .password {
   font-size: 7.5vw;
   margin: 20px 0px;
+  border-radius: 7px;
 
 }
 
 .button {
   font-size: 7.5vw;
   margin: 20px 0px;
+  border-radius: 7px;
+  background-color: aqua;
+
+}
+
+.button:hover{
+  background-color: blueviolet;
 }
