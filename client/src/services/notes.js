@@ -10,12 +10,12 @@ export const createNote = async (movement_id, noteData) => {
   return res.data
 }
 
-export const updateNote = async (user_id, note_id, noteData) => {
-  const res = await api.put(`/users/${user_id}/notes/${note_id}`, { note: noteData })
+export const updateNote = async (movement_id, note_id, noteData) => {
+  const res = await api.put(`/movements/${movement_id}/notes/${note_id}`, { note: noteData })
   return res.data
 }
 
-export const deleteNote = async (user_id, note_id) => {
-  const res = await api.delete(`/users/${user_id}/notes/${note_id}`)
+export const deleteNote = async (movement_id, note_id) => {
+  const res = await api.delete(`/movements/${movement_id}/notes/${note_id}`)
   return res.data
 }
