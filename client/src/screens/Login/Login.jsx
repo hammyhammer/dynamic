@@ -29,7 +29,7 @@ export default function Login(props) {
 
   return (
     <div className={logincss.whole}>
-      <h3 className={logincss.welcome}>Welcome to Dynamic</h3>
+      <header className={logincss.welcome}>Welcome to Dynamic</header>
       <div className={logincss.form_data}>
         <form onSubmit={handleSubmit}>
           <input className={logincss.username} type="text" value={username} placeholder="Enter your username" onChange={(event) => setUsername(event.target.value)} />

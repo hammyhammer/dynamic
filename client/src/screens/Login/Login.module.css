@@ -1,61 +1,61 @@
 /* * {
   background-image: "https://media.istockphoto.com/photos/the-fitness-factory-picture-id1287929291?b=1&k=20&m=1287929291&s=170667a&w=0&h=jlJLCvHevTFuIx4wPeSMJ1pgdoITCgqgzBX2PqNe8_s=";
 } */
+
 .whole {
-  height: 98vh;
+  /* height: 98vh; */
   /* width: 100%; */
-  background-color: #E7D3CC;
+  /* background-image: url("https://media.istockphoto.com/photos/fitness-or-bodybuilding-background-dumbbells-on-gym-floor-top-view-picture-id908224714?k=20&m=908224714&s=612x612&w=0&h=ASpkSGxPkTvtO44_1kz62scKN6bLrL9f631ZuSAf5xY=;"); */
 }
 
 
 .welcome {
   border: 2px solid blue;
-
-  font-size: 8vw;
+  font-size: 10vw;
   margin: 20px 0px;
   color: #1e0233;
 }
 
 .username {
-  border: 2px solid red;
-  margin: 10px 0px;
-  font-size: 5vw;
-
+  border-radius: 7px;
+  margin: 20px 0px;
+  font-size: 7.5vw;
 }
 
 .password {
-  border: 2px solid green;
-  font-size: 5vw;
+  border-radius: 7px;
+  font-size: 7.5vw;
 
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
-.form_data {
+/* .form_data {
   margin: 10px;
   border: 2px solid purple;
-  font-size: 5vw;
-  /* background-color: #342D50; */
-  /* background-color: #E7D3CC; */
-  /* background-color: #895575; */
+  background-color: #E7D3CC;
+  background-color: #895575;
   background-color: #1e0233;
-}
+    background-color: #342D50;
+
+} */
 
 .login {
-  border: 2px solid brown;
-  font-size: 5vw;
-  font-size: 5vw;
-
+  border-radius: 7px;
+  font-size: 7.5vw;
+  margin: 20px 0px;
+  background-color: #E7D3CC;
 }
 
 .register {
-  border: 2px solid orange;
-  font-size: 5vw;
-  margin: 10px;
-
+  border-radius: 7px;
+  font-size: 7.5vw;
+  margin: 0px 0px 20px 0px;
+  background-color: #E7D3CC;
 }
 
 .guest {
-  border: 2px solid yellow;
-  font-size: 5vw;
-
+  border-radius: 7px;
+  font-size: 7.5vw;
+  margin: 20px 0px;
+  background-color: #E7D3CC;
 }
