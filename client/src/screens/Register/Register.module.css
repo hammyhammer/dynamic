@@ -3,14 +3,28 @@
   border: 2px solid pink;
 }
 
-.username {
+.header {
+  font-size: 10vw;
+}
 
+.username {
+  font-size: 7.5vw;
+  margin: 20px 0px;
 }
 
 .email {
+  font-size: 7.5vw;
+  margin: 20px 0px;
 
 }
 
 .password {
-  
+  font-size: 7.5vw;
+  margin: 20px 0px;
+
+}
+
+.button {
+  font-size: 7.5vw;
+  margin: 20px 0px;
 }
