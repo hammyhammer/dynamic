@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react';
 
 export default function PostNote(props) {
-  const [title, setTitle] = useState('')
-  const [content, setContent] = useState('')
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -10,7 +10,7 @@ export default function PostNote(props) {
       title,
       content
     }
-    props.handleNoteCreate(note)
+    props.handleNoteCreate(note);
   }
 
   return (
@@ -25,5 +25,5 @@ export default function PostNote(props) {
         <p>Only Users can leave a note</p>
       }
     </div>
-  )
-}
+  );
+};
