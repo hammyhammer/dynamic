@@ -8,20 +8,21 @@ import Notes from '../Notes/Notes'
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([])
   const [notes, setNotes] = useState([])
-  const { movements } = props
+  // const { movements } = props
   const { id } = useParams()
-
+  // if (movements.length) formerly on line 15
   useEffect(() => {
-    if (movements.length) {
-      const specificMovement = movements.find((movement) => movement.id === Number(id))
-      setMovement(specificMovement)
-    }
+    const specificMovement = props.movements.find(movement => {
+      return movement.id === Number(id)
+      // setMovement(specificMovement)
+    })
     const fetchNotes = async () => {
       const notes = await getUserNotes(id)
       setNotes(notes)
     }
     fetchNotes()
-  }, [movements, id])
+    setMovement(specificMovement)
+  }, [id, props.movements])
 
   const handleNoteCreate = async (formData) => {
     await createNote(id, formData)
