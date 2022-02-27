@@ -1,19 +1,16 @@
-/* * {
-  background-image: "https://media.istockphoto.com/photos/the-fitness-factory-picture-id1287929291?b=1&k=20&m=1287929291&s=170667a&w=0&h=jlJLCvHevTFuIx4wPeSMJ1pgdoITCgqgzBX2PqNe8_s=";
-} */
-
 .whole {
-  /* height: 98vh; */
-  /* width: 100%; */
-  /* background-image: url("https://media.istockphoto.com/photos/fitness-or-bodybuilding-background-dumbbells-on-gym-floor-top-view-picture-id908224714?k=20&m=908224714&s=612x612&w=0&h=ASpkSGxPkTvtO44_1kz62scKN6bLrL9f631ZuSAf5xY=;"); */
+  background-color: #895575;
+  height: 98vh;
+  width: 100%;
 }
 
+/* The Art of League:  */
 
 .welcome {
-  border: 2px solid blue;
   font-size: 10vw;
   margin: 20px 0px;
   color: #1e0233;
+  font-family: "Avenir";
 }
 
 .username {
@@ -25,7 +22,6 @@
 .password {
   border-radius: 7px;
   font-size: 7.5vw;
-
   margin: 20px 0px;
 }
 
@@ -49,13 +45,13 @@
 .register {
   border-radius: 7px;
   font-size: 7.5vw;
-  margin: 0px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   background-color: #E7D3CC;
 }
 
 .guest {
   border-radius: 7px;
   font-size: 7.5vw;
-  margin: 20px 0px;
+  margin: 80px 0px;
   background-color: #E7D3CC;
 }

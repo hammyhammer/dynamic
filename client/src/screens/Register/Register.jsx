@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { registerUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
+import registercss from './Register.module.css';
 
 export default function Register(props) {
   const [username, setUsername] = useState("");
@@ -23,11 +24,11 @@ export default function Register(props) {
 
 
   return (
-    <div>
+    <div className={registercss.whole}>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={username} placeholder="Username" onChange={(event) => setUsername(event.target.value)} />
-        <input type="email" value={email} placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
-        <input type="password" value={password} placeholder="Password" onChange={(event) => setPassword(event.target.value)} />
+        <input className={registercss.username} type="text" value={username} placeholder="Username" onChange={(event) => setUsername(event.target.value)} />
+        <input className={registercss.email} type="email" value={email} placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
+        <input className={registercss.password} type="password" value={password} placeholder="Password" onChange={(event) => setPassword(event.target.value)} />
         <button>Register</button>
 
 
