@@ -11,11 +11,7 @@ export default function Notes(props) {
     }
     getUser()
   }, [])
-  // console.log(props.notes.id)
-  // console.log(currentUser)
-  console.log(props.movement)
-  // console.log(props.currentUser)
-  console.log(props.notes)
+  console.log(currentUser)
   return (
     <div>
       {props.notes &&
@@ -24,8 +20,14 @@ export default function Notes(props) {
             {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
                 <>
-                  <h5>{note.title}</h5>
-                  <p>{note.content}</p>
+                  <div>
+                    <h5>{note.title}</h5>
+                    <p>{note.content}</p>
+                    <p>Date: {note.created_at}</p>
+                  </div>
+                  <div>
+                    <button onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
+                  </div>
                 </>
                 :
                 null
@@ -34,25 +36,6 @@ export default function Notes(props) {
         ))
       }
     </div>
-    // <div>
-
-    //   {props.currentUser?.id === props.notes.id ?
-    //     <>
-    //       {
-    //         props.notes &&
-    //         props.notes.map(note => (
-    //           <div key={note.id}>
-    //             <h5>{note.title}</h5>
-    //             <p>{note.content}</p>
-    //           </div>
-    //         ))
-    //       }
-    //     </>
-    //     :
-    //     null
-    //   }
-
-    // </div>
   )
 }
 
