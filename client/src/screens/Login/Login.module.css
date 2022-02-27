@@ -1,25 +1,61 @@
 /* * {
   background-image: "https://media.istockphoto.com/photos/the-fitness-factory-picture-id1287929291?b=1&k=20&m=1287929291&s=170667a&w=0&h=jlJLCvHevTFuIx4wPeSMJ1pgdoITCgqgzBX2PqNe8_s=";
 } */
+.whole {
+  height: 98vh;
+  /* width: 100%; */
+  background-color: #E7D3CC;
+}
 
 
 .welcome {
+  border: 2px solid blue;
+
   font-size: 8vw;
   margin: 20px 0px;
-  color: pink;
+  color: #1e0233;
 }
 
 .username {
-  
+  border: 2px solid red;
   margin: 10px 0px;
+  font-size: 5vw;
+
 }
 
 .password {
+  border: 2px solid green;
+  font-size: 5vw;
+
   margin: 10px 0px;
 }
 
 .form_data {
   margin: 10px;
+  border: 2px solid purple;
+  font-size: 5vw;
+  /* background-color: #342D50; */
+  /* background-color: #E7D3CC; */
+  /* background-color: #895575; */
+  background-color: #1e0233;
+}
+
+.login {
+  border: 2px solid brown;
+  font-size: 5vw;
+  font-size: 5vw;
 
 }
 
+.register {
+  border: 2px solid orange;
+  font-size: 5vw;
+  margin: 10px;
+
+}
+
+.guest {
+  border: 2px solid yellow;
+  font-size: 5vw;
+
+}
