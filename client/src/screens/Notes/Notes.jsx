@@ -11,8 +11,8 @@ export default function Notes(props) {
     }
     getUser()
   }, [])
-  console.log(currentUser)
-  console.log(props.notes)
+  // console.log(currentUser)
+  // console.log(props.notes)
   return (
     <div>
       {props.notes &&
@@ -22,9 +22,10 @@ export default function Notes(props) {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
                 <>
                   <div>
+                    <p>Your Entry on {note.created_at}</p>
                     <h5>{note.title}</h5>
                     <p>{note.content}</p>
-                    <p>Date: {note.created_at}</p>
+
                   </div>
                   <div>
                     <EditNote notes={props.notes} handleNoteEdit={props.handleNoteEdit} />
