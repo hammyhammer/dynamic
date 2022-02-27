@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { verify } from '../../services/users'
-
+import EditNote from '../EditNote/EditNote'
 export default function Notes(props) {
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -26,7 +26,7 @@ export default function Notes(props) {
                     <p>Date: {note.created_at}</p>
                   </div>
                   <div>
-                    <button onClick={() => props.handleNoteEdit(note.id)}>Edit</button>
+                    <EditNote notes={props.notes} handleNoteEdit={props.handleNoteEdit} />
                     <button onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
                   </div>
                 </>

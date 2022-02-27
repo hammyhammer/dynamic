@@ -4,6 +4,7 @@ import Layout from '../../components/Layout/Layout'
 import PostNote from '../PostNote/PostNote'
 import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes'
 import Notes from '../Notes/Notes'
+import EditNote from '../EditNote/EditNote'
 
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([])
@@ -46,7 +47,7 @@ export default function MovementDetails(props) {
         {props.currentUser ?
           <>
             <PostNote handleNoteCreate={handleNoteCreate} />
-            <Notes notes={notes} handleNoteEdit={handleNoteEdit} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+            <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
           </>
           :
           <p>Only users can leave a note</p>
