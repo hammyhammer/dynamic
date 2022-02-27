@@ -13,7 +13,8 @@ export default function Notes(props) {
   }, [])
   // console.log(props.notes.id)
   // console.log(currentUser)
-  console.log(currentUser)
+  console.log(props.movement)
+  // console.log(props.currentUser)
   console.log(props.notes)
   return (
     <div>
@@ -21,7 +22,7 @@ export default function Notes(props) {
         props.notes.map(note => (
           <div key={note?.id}>
             {
-              currentUser?.id === note.user.id ?
+              currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
                 <>
                   <h5>{note.title}</h5>
                   <p>{note.content}</p>

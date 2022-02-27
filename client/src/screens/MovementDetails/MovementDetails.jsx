@@ -42,7 +42,7 @@ export default function MovementDetails(props) {
         {props.currentUser ?
           <>
             <PostNote handleNoteCreate={handleNoteCreate} />
-            <Notes notes={notes} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+            <Notes notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
           </>
           :
           <p>Only users can leave a note</p>
