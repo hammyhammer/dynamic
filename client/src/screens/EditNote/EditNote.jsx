@@ -10,8 +10,12 @@ export default function EditNote(props) {
   // console.log(props.movement)
   useEffect(() => {
     const specificNote = props.notes.find(note => {
-      return note.id === Number.id
+      console.log(note.id)
+      console.log(Number(id))
+      return note.id === Number(id)
+
     })
+
     if (specificNote) {
       setTitle(specificNote.title)
       setContent(specificNote.content)
@@ -25,7 +29,7 @@ export default function EditNote(props) {
       title,
       content
     }
-    props.handleNoteEdit(id, note)
+    props.handleNoteEdit(Number(id), note)
   }
 
   return (

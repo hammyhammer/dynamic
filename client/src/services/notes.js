@@ -11,7 +11,7 @@ export const createNote = async (movement_id, noteData) => {
 }
 
 export const updateNote = async (movement_id, note_id, noteData) => {
-  const res = await api.put(`/movements/${movement_id}/notes/${note_id}`, { note: noteData })
+  const res = await api.put(`/movements/${movement_id}/notes/${note_id}`, noteData)
   return res.data
 }
 

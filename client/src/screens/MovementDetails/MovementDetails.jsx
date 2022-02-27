@@ -4,7 +4,6 @@ import Layout from '../../components/Layout/Layout'
 import PostNote from '../PostNote/PostNote'
 import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes'
 import Notes from '../Notes/Notes'
-import EditNote from '../EditNote/EditNote'
 
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([])
@@ -30,7 +29,7 @@ export default function MovementDetails(props) {
   }
   // tried doing id in the agrument
   const handleNoteEdit = async (note_id, formData) => {
-    await updateNote(note_id, formData)
+    await updateNote(id, note_id, formData)
     // Navigate('/movements/')
   }
 
