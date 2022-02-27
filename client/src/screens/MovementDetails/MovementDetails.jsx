@@ -1,42 +1,40 @@
-import { useEffect, useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
-import Layout from '../../components/Layout/Layout'
-import PostNote from '../PostNote/PostNote'
-import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes'
-import Notes from '../Notes/Notes'
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Layout from '../../components/Layout/Layout';
+import PostNote from '../PostNote/PostNote';
+import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes';
+import Notes from '../Notes/Notes';
 
 export default function MovementDetails(props) {
-  const [movement, setMovement] = useState([])
-  const [notes, setNotes] = useState([])
-  // const { movements } = props
-  const { id } = useParams()
-  // if (movements.length) formerly on line 15
+  const [movement, setMovement] = useState([]);
+  const [notes, setNotes] = useState([]);
+
+  const { id } = useParams();
+
   useEffect(() => {
     const specificMovement = props.movements.find(movement => {
-      return movement.id === Number(id)
-      // setMovement(specificMovement)
+      return movement.id === Number(id);
     })
     const fetchNotes = async () => {
-      const notes = await getUserNotes(id)
-      setNotes(notes)
+      const notes = await getUserNotes(id);
+      setNotes(notes);
     }
-    fetchNotes()
-    setMovement(specificMovement)
-  }, [id, props.movements])
+    fetchNotes();
+    setMovement(specificMovement);
+  }, [id, props.movements]);
 
   const handleNoteCreate = async (formData) => {
-    await createNote(id, formData)
-  }
-  // tried doing id in the agrument
+    await createNote(id, formData);
+  };
+
   const handleNoteEdit = async (note_id, formData) => {
-    await updateNote(id, note_id, formData)
-    // Navigate('/movements/')
-  }
+    await updateNote(id, note_id, formData);
+  };
 
   const handleNoteDelete = async (note_id) => {
-    await deleteNote(id, note_id)
-  }
-  // console.log(movement)
+    await deleteNote(id, note_id);
+  };
+
   return (
     <Layout>
       <div>
@@ -48,15 +46,14 @@ export default function MovementDetails(props) {
           <>
             <PostNote currentUser={props.currentUser} handleNoteCreate={handleNoteCreate} />
             <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
-            {/* <EditNote movement={movement} notes={notes} handleNoteEdit={handleNoteEdit} /> */}
           </>
           :
           <p>Only users can leave a note</p>
 
 
-        }
+        };
 
       </div>
     </Layout>
-  )
-}
+  );
+};
