@@ -12,6 +12,7 @@ export default function Notes(props) {
     getUser()
   }, [])
   console.log(currentUser)
+  console.log(props.notes)
   return (
     <div>
       {props.notes &&

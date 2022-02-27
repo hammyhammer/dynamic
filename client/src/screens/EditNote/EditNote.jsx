@@ -6,7 +6,8 @@ export default function EditNote(props) {
   const [content, setContent] = useState('')
 
   const { id } = useParams()
-
+  // console.log(props.notes.id)
+  // console.log(props.movement)
   useEffect(() => {
     const specificNote = props.notes.find(note => {
       return note.id === Number.id

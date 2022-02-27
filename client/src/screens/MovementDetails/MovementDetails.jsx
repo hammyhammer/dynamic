@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import PostNote from '../PostNote/PostNote'
 import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes'
@@ -28,9 +28,10 @@ export default function MovementDetails(props) {
   const handleNoteCreate = async (formData) => {
     await createNote(id, formData)
   }
-
-  const handleNoteEdit = async (note_id) => {
-    await updateNote(id, note_id)
+  // tried doing id in the agrument
+  const handleNoteEdit = async (note_id, formData) => {
+    await updateNote(note_id, formData)
+    // Navigate('/movements/')
   }
 
   const handleNoteDelete = async (note_id) => {
@@ -48,6 +49,7 @@ export default function MovementDetails(props) {
           <>
             <PostNote handleNoteCreate={handleNoteCreate} />
             <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+            {/* <EditNote movement={movement} notes={notes} handleNoteEdit={handleNoteEdit} /> */}
           </>
           :
           <p>Only users can leave a note</p>
