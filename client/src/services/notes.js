@@ -1,12 +1,12 @@
 import { api } from "./apiConfig"
 
-export const getUserNotes = async (user_id) => {
-  const res = await api.get(`/users/${user_id}/notes`)
+export const getUserNotes = async (movement_id) => {
+  const res = await api.get(`/movements/${movement_id}/notes`)
   return res.data
 }
 
-export const createNote = async (user_id, noteData) => {
-  const res = await api.post(`/users/${user_id}/notes`, { note: noteData })
+export const createNote = async (movement_id, noteData) => {
+  const res = await api.post(`/movements/${movement_id}/notes`, { note: noteData })
   return res.data
 }
 

@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import PostNote from '../PostNote/PostNote'
-import { createNote, deleteNote } from '../../services/notes'
+import { createNote, deleteNote, getUserNotes } from '../../services/notes'
 import Notes from '../Notes/Notes'
 
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([])
+  const [notes, setNotes] = useState([])
   const { movements } = props
   const { id } = useParams()
 
@@ -15,6 +16,11 @@ export default function MovementDetails(props) {
       const specificMovement = movements.find((movement) => movement.id === Number(id))
       setMovement(specificMovement)
     }
+    const fetchNotes = async () => {
+      const notes = await getUserNotes(id)
+      setNotes(notes)
+    }
+    fetchNotes()
   }, [movements, id])
 
   const handleNoteCreate = async (formData) => {
@@ -34,7 +40,7 @@ export default function MovementDetails(props) {
         <img src={movement.image} />
 
         <PostNote handleNoteCreate={handleNoteCreate} />
-        <Notes handleNoteDelete={handleNoteDelete} />
+        <Notes notes={notes} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
       </div>
     </Layout>
   )

@@ -1,9 +1,22 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
+import { verify } from '../../services/users'
 
 export default function Notes(props) {
+  const [currentUser, setCurrentUser] = useState(null)
+  useEffect(() => {
+    const getUser = async () => {
+      const user = await verify()
+      setCurrentUser(user)
+    }
+    getUser()
+  }, [])
+  console.log(props.notes.user_id)
+  console.log(currentUser)
   return (
+
     <div>
-      {props.currentUser?.id === notes.user_id ?
+
+      {props.currentUser?.id === props.notes.user_id ?
         <>
           {
             props.notes &&
@@ -22,3 +35,4 @@ export default function Notes(props) {
     </div>
   )
 }
+
