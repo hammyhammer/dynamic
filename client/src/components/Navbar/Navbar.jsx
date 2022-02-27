@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { verify } from "../../services/users"
+import navcss from './Navbar.module.css'
 
 export default function Navbar(props) {
   const [currentUser, setCurrentUser] = useState(null)
@@ -25,12 +26,11 @@ export default function Navbar(props) {
   return (
     <div>
       {currentUser ?
-        <>
+        <div className={navcss.header}>
           <h5>Dynamic</h5>
+          <button>Profile</button>
           <button onClick={logout}>Logout</button>
-
-
-        </>
+        </div>
         :
         <>
           <h5>Dynamic</h5>
