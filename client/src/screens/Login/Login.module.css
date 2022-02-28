@@ -7,12 +7,12 @@
   background-position: 75% 25%;
   background-repeat: none;
   opacity: 0.95;
-
   border: 2px solid #e3985a;
+  height: 100vh;
+
   /* object-fit: contain no-repeat;
 
   object-position: 25% 75%; */
-  height: 100vh;
   /* width: 100%; */
 }
 /* .whole>img {
@@ -50,10 +50,10 @@
   margin: 20px 0px;
   text-decoration: underline;
   background-color: purple;
-  /* background-color: transparent; */
   font-family: 'Roboto', sans-serif;
-  /* background-color: #E7D3CC; */
   font-weight: bold;
+  /* background-color: transparent; */
+  /* background-color: #E7D3CC; */
 
 }
 

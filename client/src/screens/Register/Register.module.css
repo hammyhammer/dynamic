@@ -1,39 +1,53 @@
 .whole {
+  background-image: url("https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0.95;
+  border: 2px solid #e3985a;
   height: 100vh;
-  border: 2px solid pink;
 }
 
 .header {
-  font-size: 10vw;
-  font-family: "Avenir";
-
+  font-size: 12vw;
+  margin: 20px 0px;
+  color: rgb(150, 11, 114);
+  font-family: 'Orbitron', sans-serif;
 }
 
 .username {
-  font-size: 7.5vw;
-  margin: 20px 0px;
   border-radius: 7px;
+  margin: 20px 0px;
+  font-size: 7vw;
 }
 
 .email {
-  font-size: 7.5vw;
-  margin: 20px 0px;
   border-radius: 7px;
+  margin: 20px 0px;
+  font-size: 7vw;
 
 }
 
 .password {
-  font-size: 7.5vw;
-  margin: 20px 0px;
   border-radius: 7px;
+  margin: 20px 0px;
+  font-size: 7vw;
 
 }
 
 .button {
+  border-radius: 7px;
   font-size: 7.5vw;
   margin: 20px 0px;
+  text-decoration: underline;
+  background-color: purple;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+  /* font-size: 7.5vw;
+  margin: 20px 0px;
   border-radius: 7px;
-  background-color: aqua;
+  background-color: aqua; */
 
 }
 
