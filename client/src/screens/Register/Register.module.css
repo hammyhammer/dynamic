@@ -1,10 +1,11 @@
+/* Media query for iPhone 6/7/8 */
 .whole {
   background-image: url("https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: none;
   opacity: 0.95;
-  border: 2px solid #e3985a;
+  border: 2px solid black;
   height: 100vh;
 }
 
@@ -17,20 +18,20 @@
 
 .username {
   border-radius: 7px;
-  margin: 20px 0px;
+  margin: 20px 50px;
   font-size: 7vw;
 }
 
 .email {
   border-radius: 7px;
-  margin: 20px 0px;
+  margin: 20px 50px;
   font-size: 7vw;
 
 }
 
 .password {
   border-radius: 7px;
-  margin: 20px 0px;
+  margin: 20px 50px;
   font-size: 7vw;
 
 }
@@ -38,18 +39,51 @@
 .button {
   border-radius: 7px;
   font-size: 7.5vw;
-  margin: 20px 0px;
+  margin: 20px 120px;
   text-decoration: underline;
   background-color: purple;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+}
 
-  /* font-size: 7.5vw;
-  margin: 20px 0px;
-  border-radius: 7px;
-  background-color: aqua; */
+
+
+/* Media query for iPad mini */
+@media only screen and (min-width:760px) {
+  .header {
+    font-size: 12vw;
+    margin: 20px 0px;
+    color: rgb(150, 11, 114);
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .username {
+    margin: 20px 150px;
+    font-size: 6vw;
+  }
+  
+  .email {
+    margin: 20px 150px;
+    font-size: 6vw;
+  }
+  
+  .password {
+    margin: 20px 150px;
+    font-size: 6vw;
+  }
+  
+  .button {
+    border-radius: 7px;
+    font-size: 6vw;
+    margin: 30px 250px;
+  }
+  
+  .button:hover{
+    background-color: blueviolet;
+  }
 
 }
+
 
 .button:hover{
   background-color: blueviolet;
