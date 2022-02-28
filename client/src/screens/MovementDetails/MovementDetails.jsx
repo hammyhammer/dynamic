@@ -4,6 +4,7 @@ import Layout from '../../components/Layout/Layout';
 import PostNote from '../PostNote/PostNote';
 import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes';
 import Notes from '../Notes/Notes';
+import random_detailcss from './MovementDetails.module.css'
 
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([]);
@@ -37,10 +38,14 @@ export default function MovementDetails(props) {
 
   return (
     <Layout>
-      <div>
-        <h3>{movement?.name}</h3>
-        <h4>{movement?.category}</h4>
-        <img src={movement?.image} />
+      <div className={random_detailcss.whole}>
+        <h3 className={random_detailcss.name}>{movement?.name}</h3>
+        <h4 className={random_detailcss.category}>{movement?.category}</h4>
+        <img
+          src={movement?.image}
+          alt={`Image of ${movement?.image}`}
+          className={random_detailcss.image}
+        />
 
         {props.currentUser ?
           <>

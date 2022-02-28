@@ -1,0 +1,16 @@
+.whole {
+  background-image: linear-gradient(white, purple);
+  height: 100vh
+}
+.name {
+  font-size: 5vw;
+}
+
+.category {
+  font-size: 5vw
+}
+
+.image {
+  width: 300px;
+  border-radius: 10px;
+}
