@@ -7,6 +7,7 @@ import MovementDetails from "../../screens/MovementDetails/MovementDetails";
 import CustomMovements from "../../screens/CustomMovements/CustomMovements";
 export default function MovementContainer(props) {
   const [movements, setMovements] = useState([]);
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const fetchMovements = async () => {
@@ -14,7 +15,7 @@ export default function MovementContainer(props) {
       setMovements(movements)
     }
     fetchMovements()
-  }, [])
+  }, [toggle])
 
   return (
     <div>

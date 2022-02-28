@@ -9,7 +9,7 @@ import random_detailcss from './MovementDetails.module.css'
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([]);
   const [notes, setNotes] = useState([]);
-
+  const [toggle, setToggle] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -22,18 +22,23 @@ export default function MovementDetails(props) {
     }
     fetchNotes();
     setMovement(specificMovement);
-  }, [id, props.movements]);
+  }, [id, props.movements, toggle]);
 
   const handleNoteCreate = async (formData) => {
     await createNote(id, formData);
+    setToggle(prevToggle => !prevToggle);
   };
 
   const handleNoteEdit = async (note_id, formData) => {
     await updateNote(id, note_id, formData);
+    setToggle(prevToggle => !prevToggle);
+
   };
 
   const handleNoteDelete = async (note_id) => {
     await deleteNote(id, note_id);
+    setToggle(prevToggle => !prevToggle);
+
   };
 
   return (
