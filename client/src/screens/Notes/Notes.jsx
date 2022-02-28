@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react'
-import { verify } from '../../services/users'
-import EditNote from '../EditNote/EditNote'
+import { useState, useEffect } from 'react';
+import { verify } from '../../services/users';
+import EditNote from '../EditNote/EditNote';
+import notescss from './Notes.module.css';
+
 export default function Notes(props) {
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -11,20 +13,22 @@ export default function Notes(props) {
     }
     getUser()
   }, [])
-  // console.log(currentUser)
+  // console.log(currentUser.username.substr(0, 5))
   // console.log(props.notes)
+
+  console.log(props.notes)
   return (
-    <div>
+    <div className={notescss.whole}>
       {props.notes &&
         props.notes.map(note => (
           <div key={note?.id}>
             {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
                 <>
-                  <div>
-                    <p>Your Entry on {note.created_at}</p>
-                    <h5>{note.title}</h5>
-                    <p>{note.content}</p>
+                  <div className={notescss.container}>
+                    <p className={notescss.time}>Your Entry on {note.created_at.substr(0, 10)}</p>
+                    <h5 className={notescss.title}>{note.title}</h5>
+                    <p className={notescss.content}>{note.content}</p>
 
                   </div>
                   <div>

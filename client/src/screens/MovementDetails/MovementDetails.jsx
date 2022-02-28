@@ -56,7 +56,7 @@ export default function MovementDetails(props) {
           <p>Only users can leave a note</p>
 
 
-        };
+        }
 
       </div>
     </Layout>
