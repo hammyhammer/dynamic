@@ -1,0 +1,29 @@
+.whole {
+  border: 2px solid green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  /* margin: 0px 90px; */
+}
+
+.title {
+  margin: 0px 100px;
+  padding: 0px 5px;
+}
+
+.content {
+  margin: 0px 100px;
+  padding: 5px;
+}
+
+.button {
+  margin: 0px 170px;
+  text-decoration: underline;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
