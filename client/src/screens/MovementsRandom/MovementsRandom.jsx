@@ -10,7 +10,9 @@ export default function Movements(props) {
         props.movements.map(movement => (
           <Link key={movement.id} to={`/movements/${movement.id}`}>
             <h2>{movement.name}</h2>
-            <img src={movement.image} />
+            <img src={movement.image}
+              alt={`Image of ${movement.name}`}
+              className={ } />
           </Link>
         ))
       }

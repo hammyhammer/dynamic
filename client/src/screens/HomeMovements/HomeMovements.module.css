@@ -1,8 +1,20 @@
+.whole {
+  height: 100vh;
+  background-image: linear-gradient(white, rgb(154, 52, 154));
 
+}
 
 .default_training_img {
   margin: 10px;
   width: 400px;
+  border-radius: 10px;
+}
+
+.mini_titles {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
 }
 
 @media screen {
