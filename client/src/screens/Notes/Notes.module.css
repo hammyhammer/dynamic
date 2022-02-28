@@ -1,5 +1,8 @@
 .whole {
-  border: 2px solid cyan
+  margin: 10px 0px;
+  border: 2px solid cyan;
+  overflow-y: scroll;
+  max-height: 87.5vw;
 }
 
 .container {
@@ -22,4 +25,15 @@
 .content {
   margin: 5px 0px;
   font-size: 3vw;
+}
+
+.delete {
+  text-decoration: underline;
+  background-color: rgb(177, 69, 177);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.edit_delete {
+  border: 2px solid yellow;
 }

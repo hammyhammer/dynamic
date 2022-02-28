@@ -31,9 +31,14 @@ export default function Notes(props) {
                     <p className={notescss.content}>{note.content}</p>
 
                   </div>
-                  <div>
-                    <EditNote notes={props.notes} handleNoteEdit={props.handleNoteEdit} />
-                    <button onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
+                  <div className={notescss.edit_delete}>
+                    <div>
+                      <EditNote notes={props.notes} handleNoteEdit={props.handleNoteEdit} />
+                    </div>
+                    <div>
+                      <button className={notescss.delete} onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
+                    </div>
+
                   </div>
                 </>
                 :
