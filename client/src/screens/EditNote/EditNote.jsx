@@ -8,13 +8,13 @@ export default function EditNote(props) {
 
   const { id } = useParams()
   console.log(props.notes)
-  console.log(props.movement)
+  // console.log(props.movement)
   useEffect(() => {
     const specificNote = props.notes.find(note => {
       console.log(note.id)
       console.log(Number(id))
-      return note.id === Number(id)
-
+      // return note.id === Number(id)
+      return note.id
     })
 
     if (specificNote) {
