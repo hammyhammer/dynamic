@@ -7,10 +7,11 @@ export default function EditNote(props) {
   const [content, setContent] = useState('')
 
   const { id } = useParams()
-  console.log(props.notes)
+  console.log(props.note)
   // console.log(props.movement)
   useEffect(() => {
-    const specificNote = props.notes.find(note => {
+    console.log(props.note.id)
+    const specificNote = props.notes?.find(note => {
       console.log(note.id)
       console.log(Number(id))
       // return note.id === Number(id)
@@ -30,7 +31,8 @@ export default function EditNote(props) {
       title,
       content
     }
-    props.handleNoteEdit(Number(id), note)
+    // props.handleNoteEdit(Number(id), note)
+    props.handleNoteEdit(props.note.id, note)
   }
 
   return (

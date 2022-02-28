@@ -5,7 +5,7 @@ export default function Movements(props) {
   const current = new Date()
   console.log(Date())
   const date = `${current.getMonth() + 1}/${current.getDate()}/${current.getFullYear()}`
-
+  console.log(props.currentUser)
   return (
     <div className={randomcss.whole}>
       <h3>{`Training set for ${date}`}</h3>

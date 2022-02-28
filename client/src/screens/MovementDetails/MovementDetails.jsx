@@ -32,7 +32,6 @@ export default function MovementDetails(props) {
   const handleNoteEdit = async (note_id, formData) => {
     await updateNote(id, note_id, formData);
     setToggle(prevToggle => !prevToggle);
-
   };
 
   const handleNoteDelete = async (note_id) => {
