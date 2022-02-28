@@ -1,0 +1,14 @@
+.whole {
+  background-image: linear-gradient(white, rgb(164, 48, 164));
+}
+
+.movements {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: black
+}
+
+.movements>img {
+  width: 300px;
+  border-radius: 10px;
+}

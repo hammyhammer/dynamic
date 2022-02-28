@@ -1,21 +1,24 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import randomcss from "./MovementsRandom.module.css";
 
 export default function Movements(props) {
+  const current = new Date()
+  console.log(Date())
+  const date = `${current.getMonth() + 1}/${current.getDate()}/${current.getFullYear()}`
 
   return (
-    <div>
-      <h3>Assigned Movements by Dynamic</h3>
+    <div className={randomcss.whole}>
+      <h3>{`Training set for ${date}`}</h3>
       {
         props.movements.map(movement => (
-          <Link key={movement.id} to={`/movements/${movement.id}`}>
+          <Link className={randomcss.movements} key={movement.id} to={`/movements/${movement.id}`}>
             <h2>{movement.name}</h2>
             <img src={movement.image}
               alt={`Image of ${movement.name}`}
-              className={ } />
+              className={randomcss.images} />
           </Link>
         ))
-      }
+      };
     </div>
-  )
-}
+  );
+};
