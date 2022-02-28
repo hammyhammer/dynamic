@@ -34,20 +34,20 @@
 
 .username {
   border-radius: 7px;
-  margin: 20px 0px;
+  margin: 20px 75px;
   font-size: 7vw;
 }
 
 .password {
   border-radius: 7px;
   font-size: 7vw;
-  margin: 20px 0px;
+  margin: 20px 75px;
 }
 
 .login {
   border-radius: 7px;
   font-size: 7.5vw;
-  margin: 20px 0px;
+  margin: 20px 150px;
   text-decoration: underline;
   background-color: purple;
   font-family: 'Roboto', sans-serif;
