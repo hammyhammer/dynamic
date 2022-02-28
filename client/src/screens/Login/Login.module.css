@@ -1,6 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poller+One&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poller+One&family=Roboto:wght@300&display=swap'); */
 /* Default Phone view (iPhone 6/7/8) */
+
 .whole {
   background-image: url("https://images.pexels.com/photos/6455928/pexels-photo-6455928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
@@ -9,18 +8,7 @@
   opacity: 0.95;
   border: 2px solid black;
   height: 100vh;
-
-  /* object-fit: contain no-repeat;
-
-  object-position: 25% 75%; */
-  /* width: 100%; */
 }
-/* .whole>img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain no-repeat;
-  object-position: 75% 25%;
-} */
 /* The Art of League:  */
 
 .welcome {
@@ -124,3 +112,46 @@
   }
 
 }
+
+@media only screen and (min-width:1000px) {
+  .whole {
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.95;
+    height: 100vh;
+  }
+  .welcome {
+    font-size: 7vw;
+  }
+  
+  .username {
+    margin: 20px 400px;
+    font-size: 3vw;
+  }
+  
+  .password {
+    font-size: 3vw;
+    margin: 20px 400px;
+  }
+  
+  .login {
+    font-size: 3vw;
+    margin: 20px 550px;
+  }
+  
+  .register {
+    font-size: 3vw;
+    margin: 50px 50px 20px 0px;
+  }
+  
+  .guest {
+    border-radius: 7px;
+    font-size: 3vw;
+    margin: 80px 0px 0px 10px;
+  }
+  
+  .nonusers {
+    margin: 150px 0px;
+  }
+
+} 
