@@ -10,6 +10,16 @@ class NotesController < ApplicationController
     render json: @notes, include: :user
   end
 
+  def get_all_notes
+    @notes = Note.all
+    render json: @notes
+  end
+
+  def get_user_notes
+    @notes = Note.find(params[:user_id])
+    render json: @notes
+  end
+
   # GET /notes/1
   def show
     render json: @note
