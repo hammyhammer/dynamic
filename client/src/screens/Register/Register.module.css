@@ -82,19 +82,32 @@
     font-size: 3.5vw;
     margin: 140px 300px;
   }
-  
-  .button:hover{
-    background-color: rgb(162, 93, 227);
+}
+
+@media only screen and (min-width:1250px) {
+  .header {
+    font-size: 3.5vw;
+    margin: 75px 300px 100px 300px;
+
   }
-
-}
-
-@media only screen and (min-width:1000px) {
-
-
-
-.button:hover{
-  background-color: blueviolet;
-}
-
+  
+  .username {
+    margin: 20px 350px;
+    font-size: 2.5vw;
+  }
+  
+  .email {
+    margin: 20px 350px;
+    font-size: 2.5vw;
+  }
+  
+  .password {
+    margin: 20px 350px;
+    font-size: 2.5vw;
+  }
+  
+  .button {
+    font-size: 2.5vw;
+    margin: 140px 570px;
+  }
 }
