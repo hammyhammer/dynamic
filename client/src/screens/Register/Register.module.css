@@ -60,33 +60,27 @@
 /* Media query for iPad mini */
 @media only screen and (min-width:760px) {
   .header {
-    font-size: 6vw;
-    margin: 130px 0px 0px 0px;
-    color: rgb(150, 11, 114);
-    font-family: 'Orbitron', sans-serif;
+    font-size: 5vw;
   }
   
   .username {
     margin: 20px 150px;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   
   .email {
     margin: 20px 150px;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   
   .password {
     margin: 20px 150px;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   
   .button {
-    border-radius: 7px;
-    font-size: 6vw;
-    margin: 30px 250px;
-    background-color: rgb(179, 76, 179);
-
+    font-size: 3.5vw;
+    margin: 140px 300px;
   }
   
   .button:hover{
@@ -95,7 +89,12 @@
 
 }
 
+@media only screen and (min-width:1000px) {
+
+
 
 .button:hover{
   background-color: blueviolet;
+}
+
 }
