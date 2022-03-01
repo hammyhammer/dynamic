@@ -3,10 +3,23 @@ import randomcss from "./MovementsRandom.module.css";
 
 export default function Movements(props) {
   const current = new Date()
-  console.log(Date())
+
   const date = `${current.getMonth() + 1}.${current.getDate()}.${current.getFullYear()}`
-  console.log(props.currentUser)
-  console.log(props.movements)
+
+  // const shuffle = (array) => {
+  //   let currentIndex = array.length, randomIndex
+  //   while (currentIndex != 0) {
+  //     randomIndex = Math.floor(Math.random() * currentIndex);
+  //     currentIndex--;
+
+  //     [array[currentIndex], array[randomIndex]] = [
+  //       array[randomIndex], array[currentIndex]]
+
+  //   }
+  //   return array
+  // }
+  // shuffle(props.movements)
+
   return (
     <div className={randomcss.whole}>
       <h3 className={randomcss.date}>{`Training Set: ${date}`}</h3>
