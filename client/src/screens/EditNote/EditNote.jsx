@@ -37,12 +37,12 @@ export default function EditNote(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      {/* <input
         type='text'
         onChange={(event) => setTitle(event.target.value)}
         value={title}
         className={editcss.title}
-      />
+      /> */}
 
       <input
         type='text'

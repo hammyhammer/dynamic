@@ -1,14 +1,15 @@
 .whole {
   margin: 10px 0px;
-  border: 2px solid cyan;
+  border: 2px solid orange;
   overflow-y: scroll;
   max-height: 87.5vw;
 }
 
 .container {
   border: 2px solid black;
-  margin: 0px 90px;
-  border-radius: 10px;
+  background-color: rgb(162, 65, 162);;
+  margin: 0px 70px;
+  border-radius: 2px;
 }
 
 .time {
@@ -29,11 +30,12 @@
 
 .delete {
   text-decoration: underline;
-  background-color: rgb(177, 69, 177);
+  /* background-color: rgb(177, 69, 177); */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 2vw;
 }
 
 .edit_delete {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }

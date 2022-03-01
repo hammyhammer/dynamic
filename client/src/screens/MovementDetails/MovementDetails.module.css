@@ -1,16 +1,19 @@
 .whole {
-  background-image: linear-gradient(white, purple);
-  height: 100vh
+background-color: rgb(167, 167, 167) ;  
+height: 100vh
 }
 .name {
-  font-size: 5vw;
+  color: white;
+  font-family: 'Raleway';
+
 }
 
 .category {
-  font-size: 5vw
-}
+  color: white;
+  font-family: 'Raleway';}
 
 .image {
-  width: 300px;
+  width: 100%;
+  max-height: 400px;
   border-radius: 10px;
 }

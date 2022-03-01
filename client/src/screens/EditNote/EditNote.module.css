@@ -12,7 +12,8 @@
 .button {
   margin: 0px 170px;
   text-decoration: underline;
-  background-color: rgb(177, 69, 177);
+  /* background-color: rgb(177, 69, 177); */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 2vw;
 }

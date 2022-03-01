@@ -25,5 +25,9 @@ form {
   background-color: transparent;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 2vw;
 }
+
+/* Bring edit and delete buttons inside of the border card thingy. Make them less  */
+/*  */
 

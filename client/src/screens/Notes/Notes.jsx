@@ -26,7 +26,7 @@ export default function Notes(props) {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
                 <>
                   <div className={notescss.container}>
-                    <p className={notescss.time}>Your Entry on {note.created_at.substr(0, 10)}</p>
+                    <p className={notescss.time}>Date: {note.created_at.substr(0, 10)}</p>
                     <h5 className={notescss.title}>{note.title}</h5>
                     <p className={notescss.content}>{note.content}</p>
 
