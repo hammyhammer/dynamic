@@ -20,20 +20,20 @@ export default function Navbar(props) {
   const logout = () => {
     localStorage.removeItem(`authToken`)
     setCurrentUser(null)
-    navigate("/")
+    // navigate("/")
   }
 
   return (
     <div>
       {currentUser ?
         <div className={navcss.header}>
-          <h5 className={navcss.dynamic}>Dynamic</h5>
-          <button className={navcss.profile}>Profile</button>
-          <button className={navcss.logout} onClick={logout}>Logout</button>
+          <Link className={navcss.dynamic} to="/">Dynamic</Link>
+          <Link className={navcss.calendar} to="/calendar">Your Calendar</Link>
+          <Link className={navcss.logout} to='/' onClick={logout}>Logout</Link>
         </div>
         :
         <>
-          <h5>Dynamic</h5>
+          <Link className={navcss.dynamic} to="/">Dynamic</Link>
           <Link to='/register'>Sign up!</Link>
         </>
       }
