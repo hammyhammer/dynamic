@@ -14,7 +14,12 @@ border: 2px solid rgb(167, 167, 167);
   font-family: 'Raleway';}
 
 .image {
-  width: 100%;
-  max-height: 400px;
+  width: 50%;
+  text-align: right;
+  /* max-height: 400px; */
   border-radius: 10px;
+}
+
+.cues {
+  text-align: left;
 }

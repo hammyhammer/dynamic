@@ -13,10 +13,6 @@ export default function Notes(props) {
     }
     getUser()
   }, [])
-  // console.log(currentUser.username.substr(0, 5))
-  // console.log(props.notes)
-
-  console.log(props.notes)
   return (
     <div className={notescss.whole}>
       {props.notes &&

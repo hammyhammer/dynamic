@@ -39,11 +39,26 @@ export default function MovementDetails(props) {
     setToggle(prevToggle => !prevToggle);
   };
 
+  let description = movement?.description
+  let cues = description?.split(". ")
+  // let finalDescription = '\u2022' + cues?.join("\n\u2022")
+
+
   return (
     <Layout>
       <div className={random_detailcss.whole}>
         <h3 className={random_detailcss.name}>{movement?.name}</h3>
-        <img
+        <p className={random_detailcss.cues}>Cues:</p>
+        {
+          cues?.map(cue => (
+            <p className={random_detailcss.cues} key={cue.id}>
+              {cue}
+            </p>
+
+          ))
+
+        }
+        < img
           src={movement?.image}
           alt={`Image of ${movement?.image}`}
           className={random_detailcss.image}
