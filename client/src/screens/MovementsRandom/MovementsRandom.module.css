@@ -1,14 +1,44 @@
 .whole {
-  background-image: linear-gradient(white, rgb(164, 48, 164));
+  /* background-image: linear-gradient(white, rgb(164, 48, 164)); */
+  background-color: black;
+  border: 2px solid black;
 }
+
+.date {
+  color: white;
+  font-family: 'Raleway';
+
+}
+
 
 .movements {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: black
+  /* border: 2px solid pink; */
 }
 
-.movements>img {
+.card {
+  /* border: 2px solid palegoldenrod; */
+  margin: 20px 0px;
+}
+
+.name {
+  font-size: 3.5vw;
+  font-family: 'Raleway';
+  color: white;
+  margin: 0px 0px 0px 20px;
+  text-align: left;
+  /* border: 2px solid cyan */
+}
+
+.images{
+  width: 100%;
+  margin: 10px 0px;
+  /* border: 2px solid yellow */
+
+}
+
+
+/* .movements>img {
   width: 300px;
   border-radius: 10px;
-}
+} */

@@ -8,14 +8,16 @@ export default function Movements(props) {
   console.log(props.currentUser)
   return (
     <div className={randomcss.whole}>
-      <h3>{`Training set for ${date}`}</h3>
+      <h3 className={randomcss.date}>{`Training set for ${date}`}</h3>
       {
         props.movements.map(movement => (
           <Link className={randomcss.movements} key={movement.id} to={`/movements/${movement.id}`}>
-            <h2>{movement.name}</h2>
-            <img src={movement.image}
-              alt={`Image of ${movement.name}`}
-              className={randomcss.images} />
+            <div className={randomcss.card}>
+              <h2 className={randomcss.name}>{movement.name}</h2>
+              <img src={movement.image}
+                alt={`Image of ${movement.name}`}
+                className={randomcss.images} />
+            </div>
           </Link>
         ))
       };

@@ -1,5 +1,15 @@
+
 .header {
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-around; */
+  border: 2px solid pink;
+  border-bottom: 2px solid black;
+}
+
+.dynamic {
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(150, 11, 114);
+  font-size: 6vw;
+  border: 2px solid yellow;
 }

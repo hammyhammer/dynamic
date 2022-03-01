@@ -27,9 +27,9 @@ export default function Navbar(props) {
     <div>
       {currentUser ?
         <div className={navcss.header}>
-          <h5>Dynamic</h5>
-          <button>Profile</button>
-          <button onClick={logout}>Logout</button>
+          <h5 className={navcss.dynamic}>Dynamic</h5>
+          <button className={navcss.profile}>Profile</button>
+          <button className={navcss.logout} onClick={logout}>Logout</button>
         </div>
         :
         <>
