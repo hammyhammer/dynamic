@@ -38,7 +38,24 @@
 
 /* iPad mini */
 @media only screen and (min-width:760px) {
-
+  .header {
+    padding: 0px 0px 15px 0px;
+  }
+  
+  .dynamic {
+    font-size: 4vw;
+    margin: 5px 0px 0px 0px;
+  }
+  
+  .calendar {
+    font-size: 4vw;
+    margin: 9px 0px 0px 0px;
+  }
+  
+  .logout {
+    margin: 9px 0px 0px 0px;
+    font-size: 4vw;
+  }
 }
 
 
