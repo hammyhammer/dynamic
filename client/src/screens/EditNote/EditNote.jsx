@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { render } from 'react-dom';
 import { useParams } from 'react-router-dom';
 import editcss from './EditNote.module.css';
 
@@ -6,15 +7,10 @@ export default function EditNote(props) {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
-  const { id } = useParams()
-  console.log(props.note)
-  // console.log(props.movement)
+  const { id } = useParams();
+
   useEffect(() => {
-    console.log(props.note.id)
     const specificNote = props.notes?.find(note => {
-      console.log(note.id)
-      console.log(Number(id))
-      // return note.id === Number(id)
       return note.id
     })
 
@@ -31,27 +27,64 @@ export default function EditNote(props) {
       title,
       content
     }
-    // props.handleNoteEdit(Number(id), note)
     props.handleNoteEdit(props.note.id, note)
   }
 
+  const showEditForm = (event) => {
+    event.preventDefault()
+    render()
+    {
+      return (
+        <div>
+          <form onSubmit={handleSubmit}>
+            {/* 
+        <input
+          type='text'
+          onChange={(event) => setTitle(event.target.value)}
+          value={title}
+          className={editcss.title}
+        /> */}
+
+            <input
+              type='text'
+              onChange={(event) => setContent(event.target.value)}
+              value={content}
+              className={editcss.content}
+            />
+            <button className={editcss.button}>Edit</button>
+
+          </form>
+        </div>
+      )
+    }
+  }
+
+
   return (
-    <form onSubmit={handleSubmit}>
-      {/* <input
-        type='text'
-        onChange={(event) => setTitle(event.target.value)}
-        value={title}
-        className={editcss.title}
-      /> */}
+    <div>
+      <button onClick={showEditForm}>Edit Entry</button>
+    </div>
+  );
 
-      <input
-        type='text'
-        onChange={(event) => setContent(event.target.value)}
-        value={content}
-        className={editcss.content}
 
-      />
-      <button className={editcss.button}>Edit</button>
-    </form>
-  )
+  // return (
+  //   <form onSubmit={handleSubmit}>
+  //     <button className={editcss.button}>Edit</button>
+
+  //      <input
+  //       type='text'
+  //       onChange={(event) => setTitle(event.target.value)}
+  //       value={title}
+  //       className={editcss.title}
+  //     />
+
+  //     <input
+  //       type='text'
+  //       onChange={(event) => setContent(event.target.value)}
+  //       value={content}
+  //       className={editcss.content}
+
+  //     />
+  //   </form>
+  // )
 }

@@ -1,6 +1,7 @@
 .whole {
 background-color: rgb(167, 167, 167) ;  
-height: 100vh
+height: 90vh;
+border: 2px solid rgb(167, 167, 167);
 }
 .name {
   color: white;

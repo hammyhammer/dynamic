@@ -37,14 +37,12 @@ export default function MovementDetails(props) {
   const handleNoteDelete = async (note_id) => {
     await deleteNote(id, note_id);
     setToggle(prevToggle => !prevToggle);
-
   };
 
   return (
     <Layout>
       <div className={random_detailcss.whole}>
         <h3 className={random_detailcss.name}>{movement?.name}</h3>
-        <h4 className={random_detailcss.category}>{movement?.category}</h4>
         <img
           src={movement?.image}
           alt={`Image of ${movement?.image}`}
