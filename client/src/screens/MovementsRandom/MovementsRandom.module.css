@@ -7,17 +7,13 @@
 .date {
   color: white;
   font-family: 'Raleway';
-
 }
-
 
 .movements {
   text-decoration: none;
-  /* border: 2px solid pink; */
 }
 
 .card {
-  /* border: 2px solid palegoldenrod; */
   margin: 20px 0px;
 }
 
@@ -27,18 +23,65 @@
   color: white;
   margin: 0px 0px 0px 20px;
   text-align: left;
-  /* border: 2px solid cyan */
 }
 
 .images{
   width: 100%;
   margin: 10px 0px;
-  /* border: 2px solid yellow */
-
 }
 
+@media only screen and (min-width:760px) {
+  .date {
+    font-size: 4vw
+  }
+  
+  .card {
+    margin: 40px 0px;
+  }
+  
+  .name {
+    font-size: 4vw;
+  }
+}
 
-/* .movements>img {
-  width: 300px;
-  border-radius: 10px;
-} */
+@media only screen and (min-width:1250px) {
+  .whole {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+    border: 2px solid cyan;
+  }
+
+  .date {
+    font-size: 3.5vw;
+  }
+  
+  
+  .movements {
+    text-decoration: none;
+    width: 300px;
+    max-height: 300px;
+  }
+  
+  .card {
+    border: 2px solid palegoldenrod;
+    margin: 20px 0px;
+  }
+  
+  .name {
+    font-size: 2.5vw;
+    margin: 0px 0px 0px 20px;
+    border: 2px solid cyan
+  }
+  
+  .images{
+    width: 75%;
+    height: 100%;   
+    margin: 10px 0px;
+    border: 2px solid yellow
+  
+  }
+  
+}

@@ -6,6 +6,7 @@ export default function Movements(props) {
   console.log(Date())
   const date = `${current.getMonth() + 1}.${current.getDate()}.${current.getFullYear()}`
   console.log(props.currentUser)
+  console.log(props.movements)
   return (
     <div className={randomcss.whole}>
       <h3 className={randomcss.date}>{`Training Set: ${date}`}</h3>
