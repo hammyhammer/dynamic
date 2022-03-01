@@ -5,12 +5,15 @@
   justify-content: space-around;
   align-content: center;
   border-bottom: 2px solid black;
+  padding: 0px 0px 15px 0px;
 }
 
 .dynamic {
   font-family: 'Orbitron', sans-serif;
   color: rgb(150, 11, 114);
   font-weight: bold;
+  font-size: 5vw;
+  margin: 5px 0px 0px 0px;
   /* border: 2px solid yellow; */
 }
 
@@ -19,8 +22,8 @@
   font-family: 'Roboto', sans-serif;
   color: rgb(150, 11, 114);
   font-weight: bold;
-
-  margin: 2px 0px
+  font-size: 5vw;
+  margin: 7px 0px 0px 0px;
 }
 
 .logout {
@@ -28,7 +31,16 @@
   font-family: 'Roboto', sans-serif;
   color: rgb(150, 11, 114);
   font-weight: bold;
-  margin: 2px 0px
+  margin: 7px 0px 0px 0px;
+  font-size: 5vw;
+
 }
 
-/* Dynamic to the left corner.  */
+/* iPad mini */
+@media only screen and (min-width:760px) {
+
+}
+
+
+@media only screen and (min-width:1250px) {
+}

@@ -1,4 +1,7 @@
-/* .footer {
+.footer {
+  position: absolute;
+  bottom: 0;
+
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -11,7 +14,7 @@
 .a {
   display: flex;
   justify-content: flex-end;
-  width: 4%;
+  width: 8%;
   height: 4%;
 }
 
@@ -27,4 +30,14 @@
   padding: 10px 30px;
   width: 60%;
   height: 60%;
-} */
+}
+
+/* iPad Mini */
+@media only screen and (min-width:760px) {
+
+}
+
+
+
+@media only screen and (min-width:1250px) {
+}
