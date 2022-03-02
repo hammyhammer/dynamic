@@ -2,7 +2,7 @@
   margin: 10px 0px;
   border: 2px solid orange;
   overflow-y: scroll;
-  max-height: 87.5vw;
+  max-height: 30vh;
 }
 
 .container {
@@ -30,7 +30,6 @@
 
 .delete {
   text-decoration: underline;
-  /* background-color: rgb(177, 69, 177); */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2vw;

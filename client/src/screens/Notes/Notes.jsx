@@ -26,11 +26,11 @@ export default function Notes(props) {
                     <h5 className={notescss.title}>{note.title}</h5>
                     <p className={notescss.content}>{note.content}</p>
                     <button className={notescss.delete} onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
+                    <EditNote note={note} handleNoteEdit={props.handleNoteEdit} />
 
                   </div>
                   <div className={notescss.edit_delete}>
                     <div>
-                      <EditNote note={note} handleNoteEdit={props.handleNoteEdit} />
                     </div>
                     {/* <div>
                       <button className={notescss.delete} onClick={() => props.handleNoteDelete(note.id)}>Remove entry</button>
