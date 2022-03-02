@@ -48,11 +48,10 @@ export default function MovementDetails(props) {
         <h3 className={random_detailcss.name}>{movement?.name}</h3>
         <p className={random_detailcss.cues}>Cues:</p>
         {
-          cues?.map(cue => (
-            <p className={random_detailcss.cues} key={cue.id}>
+          cues?.map((cue, idx) => (
+            <p key={idx} className={random_detailcss.cues}>
               {cue}
             </p>
-
           ))
         }
         < img
