@@ -10,7 +10,6 @@
   padding: 1px 2px;
   font-size: 2.5vw;
   margin: 0px 70px;
-  border: 2px solid red;
   width: 80%;
   position: relative;
   right: 50%;
@@ -22,7 +21,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2vw;
-  border: 2px solid lime;
   width: 70%;
   position: relative;
   right: 71%;
@@ -45,5 +43,20 @@
 }
 
 @media only screen and (min-width:1250px) {
-
+  .edit_entry {
+    font-size: 2.5vw;
+    margin: 12px 0px
+  }
+  
+  .edit_form {
+    width: 30%;
+    left: 23%;
+  }
+  
+  .edit_button {
+    margin: 0px 110px;
+    font-size: 2vw;
+    width: 30%;
+    left: 17%;
+  }
 }

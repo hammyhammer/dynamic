@@ -33,5 +33,21 @@ border: 2px solid rgb(167, 167, 167);
 }
 
 @media only screen and (min-width:1250px) {
-
+  .whole {
+    height: 130vh;
+    }
+    .name {
+      color: white;
+      font-size: 3.25vw;
+      margin: 30px 0px 0px 0px;
+    }
+    
+    .image {
+      width: 20%;
+      border-radius: 10px;
+    }
+    
+    .cues {
+      font-size: 1.5vw;
+    }
 }

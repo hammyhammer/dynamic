@@ -29,10 +29,10 @@ export default function Navbar(props) {
           <Link className={navcss.logout} to='/' onClick={logout}>Logout</Link>
         </div>
         :
-        <>
-          <Link className={navcss.dynamic} to="/">Dynamic</Link>
-          <Link to='/register'>Sign up!</Link>
-        </>
+        <div className={navcss.header}>
+          <Link className={navcss.dynamic} to="/movements">Dynamic</Link>
+          <Link className={navcss.logout} to='/register'>Sign up!</Link>
+        </div>
       }
     </div>
   )
