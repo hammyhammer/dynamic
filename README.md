@@ -104,35 +104,31 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Migrations (BE)     |    H     |     0.5 hrs    |     TBA       |     TBD    |
-| Controllers (BE)    |    H     |     2 hrs      |     TBA       |     TBD     |
-| Models (BE)         |    H     |     0.5 hrs    |     TBA       |     TBD     |
-| Routes (BE)         |    H     |     0.5 hrs    |     TBA       |     TBD     |
-| Gemfile/Cors (BE)   |    H     |     0.5 hrs    |     TBA       |     TBD     |
-| Setup Seed file (BE)|    H     |     3 hrs      |     TBA       |     TBD     |
-| Setup Auth      (BE)|    H     |     1 hrs      |     TBA       |     TBD     |
-| Setup services (FE) |    H     |     2 hrs      |     TBA       |     TBD     |
-| Create Home.jsx (FE)|    H     |     2.5 hrs    |     TBA       |     TBD     |
-| Rando Train Form(FE)|    H     |     3 hrs      |     TBA       |     TBD     |
-| Login Function (FE) |    H     |     2 hrs      |     TBA       |     TBD     |
-| Profile.jsx (FE)    |    H     |     2 hrs      |     TBA       |     TBD     |
-| Regist function(FE) |    H     |     2 hrs      |     TBA       |     TBD     |
-| Login.jsx (FE)      |    H     |     2 hrs      |     TBA       |     TBD     |
-| Regist.jsx (FE)     |    H     |     2 hrs      |     TBA       |     TBD     |
-| Journal Post (FE)   |    H     |     2.5 hrs    |     TBA       |     TBD     |
-| Journal Edit (FE)   |    H     |     2.5 hrs    |     TBA       |     TBD     |
-| Journal Delete (FE) |    H     |     2.5 hrs    |     TBA       |     TBD     |
-| Exercise Post (FE)  |    H     |     2.5 hrs    |     TBA       |     TBA     |
-| Header.jsx (FE)     |    H     |     1.5 hrs    |     TBA       |     TBA     |
-| Footer.jsx (FE)     |    H     |     1.5 hrs    |     TBA       |     TBA     |
-| Navbar.jsx (FE)     |    H     |     2 hrs      |     TBA       |     TBA     |
-| Layout.jsx (FE)     |    H     |     2 hrs      |     TBA       |     TBA     |
-| Card.jsx (FE)       |    H     |     1 hrs      |     TBA       |     TBA     |
-| Media Query         |    H     |     3 hrs      |     TBA       |     TBA     |
+| Migrations (BE)     |    H     |     0.5 hrs    |     1 hrs     |     1 hrs   |
+| Controllers (BE)    |    H     |     2 hrs      |     2 hrs     |     2 hrs   |
+| Models (BE)         |    H     |     0.5 hrs    |     0.5 hrs   |     0.5 hrs |
+| Routes (BE)         |    H     |     0.5 hrs    |     1 hrs     |     1 hrs   |
+| Gemfile/Cors (BE)   |    H     |     0.5 hrs    |     0.5 hrs   |     0.5 hrs |
+| Setup Seed file (BE)|    H     |     3 hrs      |     2 hrs     |     2 hrs   |
+| Setup Auth      (BE)|    H     |     1 hrs      |     2 hrs     |     2 hrs   |
+| Setup services (FE) |    H     |     2 hrs      |     1.5 hrs   |     1.5 hrs |
+| Create Home.jsx (FE)|    H     |     2.5 hrs    |     3 hrs     |     3 hrs   |
+| Rando Train Form(FE)|    H     |     3 hrs      |     3 hrs     |     3 hrs   |
+| Login Function (FE) |    H     |     2 hrs      |     1.5 hrs   |     1.5 hrs |
+| Regist function(FE) |    H     |     2 hrs      |     1.5 hrs   |     1.5 hrs |
+| Login.jsx (FE)      |    H     |     2 hrs      |     2.5 hrs   |     2.5 hrs |
+| Regist.jsx (FE)     |    H     |     2 hrs      |     2.5 hrs   |     2.5 hrs |
+| Journal Post (FE)   |    H     |     2.5 hrs    |     2 hrs     |     2 hrs   |
+| Journal Edit (FE)   |    H     |     2.5 hrs    |     3.5 hrs   |     3.5 hrs |
+| Journal Delete (FE) |    H     |     2.5 hrs    |     1.5 hrs   |     1.5 hrs |
+| Footer.jsx (FE)     |    H     |     1.5 hrs    |     1 hrs     |     1 hrs   |
+| Navbar.jsx (FE)     |    H     |     2 hrs      |     1.5 hrs   |     1.5 hrs |
+| Layout.jsx (FE)     |    H     |     2 hrs      |     0.5 hrs   |     0.5 hrs |
+| Media Query         |    H     |     3 hrs      |     5 hrs     |     5 hrs   |
 | Experience Level(FE)|    L     |     3 hrs      |     TBA       |     TBA     |
 | Dropdown Selection  |    L     |     3 hrs      |     TBA       |     TBA     |
 | Customization       |    L     |     3 hrs      |     TBA       |     TBD     |
-| TOTAL               |          |     56 hrs     |     TBA       |     TBD     |
+| TOTAL               |          |     47.5 hrs   |     39.5 hrs  |     39.5 hrs|
 
 <br>
 
