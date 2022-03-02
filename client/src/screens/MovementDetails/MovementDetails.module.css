@@ -21,6 +21,11 @@ border: 2px solid rgb(167, 167, 167);
   font-family: 'Raleway';
 }
 
+.guest  {
+  color: white;
+  font-family: 'Raleway';
+}
+
 @media only screen and (min-width:760px) {
     .name {
       font-size: 5vw;

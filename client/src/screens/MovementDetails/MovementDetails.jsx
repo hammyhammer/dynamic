@@ -70,7 +70,7 @@ export default function MovementDetails(props) {
             <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
           </>
           :
-          <p>Only users can leave a note</p>
+          <p className={random_detailcss.guest}>Only users can leave a note</p>
 
 
         }
