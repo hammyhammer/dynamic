@@ -52,3 +52,39 @@
 .edit_delete>div {
   grid-column:1;
 }
+
+@media only screen and (min-width:760px) {
+  .container {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid black;
+    background-color: rgb(162, 65, 162);;
+    margin: 0px 70px 10px 70px;
+    border-radius: 5px;
+  }
+  
+  .time {
+    font-size: 3.25vw;
+    margin: 1px;
+  }
+  
+  .title {
+    font-size: 3vw;
+    margin: 5px 0px;
+    padding: 0px 5px;
+  }
+  
+  .content {
+    margin: 5px 0px;
+    font-size: 3vw;
+  }
+  
+  .delete {
+    font-size: 2.25vw;
+    padding: 3px 1px;
+    margin: 10px 90px 42px 90px;
+  }
+}
+
+@media only screen and (min-width:1250px) {
+
+}

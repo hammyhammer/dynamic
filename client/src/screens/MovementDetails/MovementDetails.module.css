@@ -10,10 +10,6 @@ border: 2px solid rgb(167, 167, 167);
   margin: 10px 0px 0px 0px;
 }
 
-.category {
-  color: white;
-  font-family: 'Raleway';}
-
 .image {
   width: 40%;
   border-radius: 10px;
@@ -23,5 +19,19 @@ border: 2px solid rgb(167, 167, 167);
   text-align: left;
   color: white;
   font-family: 'Raleway';
+}
+
+@media only screen and (min-width:760px) {
+    .name {
+      font-size: 5vw;
+      margin: 10px 0px 0px 0px;
+    }
+
+    .cues {
+      font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width:1250px) {
 
 }

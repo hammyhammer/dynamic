@@ -27,3 +27,23 @@
   position: relative;
   right: 71%;
 }
+
+@media only screen and (min-width:760px) {
+  .edit_entry {
+    font-size: 2.5vw;
+  }
+  .edit_form {
+    width: 50%;
+    right: 0.5%;
+  }
+  
+  .edit_button {
+    font-size: 2.25vw;
+    width: 40%;
+    right: 6%;
+  }
+}
+
+@media only screen and (min-width:1250px) {
+
+}
