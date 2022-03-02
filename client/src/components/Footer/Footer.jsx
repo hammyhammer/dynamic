@@ -1,5 +1,5 @@
-import React from 'react'
-import footercss from './Footer.module.css'
+import React from 'react';
+import footercss from './Footer.module.css';
 export default function Footer() {
   return (
     <div className={footercss.footer}>
@@ -12,5 +12,5 @@ export default function Footer() {
           className={footercss.link} />
       </a>
     </div>
-  )
-}
+  );
+};

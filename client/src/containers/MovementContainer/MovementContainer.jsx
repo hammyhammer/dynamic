@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from 'react-router-dom';
 import HomeMovements from "../../screens/HomeMovements/HomeMovements";
 import { getAllMovements } from "../../services/movements";
-import MovementsRandom from '../../screens/MovementsRandom/MovementsRandom'
+import MovementsRandom from '../../screens/MovementsRandom/MovementsRandom';
 import MovementDetails from "../../screens/MovementDetails/MovementDetails";
 import CustomMovements from "../../screens/CustomMovements/CustomMovements";
 export default function MovementContainer(props) {
@@ -11,11 +11,11 @@ export default function MovementContainer(props) {
 
   useEffect(() => {
     const fetchMovements = async () => {
-      const movements = await getAllMovements()
-      setMovements(movements)
+      const movements = await getAllMovements();
+      setMovements(movements);
     }
-    fetchMovements()
-  }, [toggle])
+    fetchMovements();
+  }, [toggle]);
 
   return (
     <div>
@@ -27,5 +27,5 @@ export default function MovementContainer(props) {
 
       </Routes>
     </div>
-  )
-}
+  );
+};
