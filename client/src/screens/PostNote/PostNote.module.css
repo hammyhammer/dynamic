@@ -1,12 +1,6 @@
-.whole {
-  border: 2px solid green;
-}
-
 form {
   display: flex;
   flex-direction: column;
-
-  /* margin: 0px 90px; */
 }
 
 .title {
@@ -20,14 +14,11 @@ form {
 }
 
 .button {
-  margin: 0px 170px;
+  margin: 5px 170px 0px 170px;
   text-decoration: underline;
-  background-color: transparent;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 3vw;
+  color: black;
+  padding: 2px 0px;
 }
-
-/* Bring edit and delete buttons inside of the border card thingy. Make them less  */
-/*  */
-

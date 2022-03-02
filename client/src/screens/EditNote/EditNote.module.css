@@ -1,19 +1,19 @@
-.content {
-  margin: 0px 100px;
-  padding: 5px;
-}
-
 .edit_entry {
   text-decoration: underline;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  margin: 12px 0px
 }
 
 .edit_form {
   padding: 1px 2px;
   font-size: 2.5vw;
-  margin: 0px 50px;
+  margin: 0px 70px;
+  border: 2px solid red;
+  width: 80%;
+  position: relative;
+  right: 50%;
 }
 
 .edit_button {
@@ -22,4 +22,8 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2vw;
+  border: 2px solid lime;
+  width: 70%;
+  position: relative;
+  right: 71%;
 }

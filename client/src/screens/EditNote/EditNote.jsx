@@ -51,7 +51,7 @@ export default function EditNote(props) {
             className={editcss.edit_form}
 
           />}
-          <button className={editcss.edit_button}>Edit</button>
+          <button className={editcss.edit_button}>Update</button>
 
         </form>
       </div>

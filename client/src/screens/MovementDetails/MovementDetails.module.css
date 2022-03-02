@@ -1,12 +1,13 @@
 .whole {
-background-color: rgb(167, 167, 167) ;  
+background-color: black ;  
 height: 90vh;
 border: 2px solid rgb(167, 167, 167);
 }
 .name {
   color: white;
   font-family: 'Raleway';
-
+  font-size: 5vw;
+  margin: 10px 0px 0px 0px;
 }
 
 .category {
@@ -14,12 +15,13 @@ border: 2px solid rgb(167, 167, 167);
   font-family: 'Raleway';}
 
 .image {
-  width: 50%;
-  text-align: right;
-  /* max-height: 400px; */
+  width: 40%;
   border-radius: 10px;
 }
 
 .cues {
   text-align: left;
+  color: white;
+  font-family: 'Raleway';
+
 }

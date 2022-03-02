@@ -1,6 +1,5 @@
 .whole {
   margin: 10px 0px;
-  border: 2px solid orange;
   overflow-y: scroll;
   max-height: 30vh;
 }
@@ -8,8 +7,8 @@
 .container {
   border: 2px solid black;
   background-color: rgb(162, 65, 162);;
-  margin: 0px 70px;
-  border-radius: 2px;
+  margin: 0px 70px 10px 70px;
+  border-radius: 5px;
 }
 
 .time {
@@ -33,8 +32,23 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2vw;
+  padding: 3px 1px;
+  margin: 10px 30px 42px 30px;
 }
 
+
+
 .edit_delete {
-  /* border: 2px solid yellow; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1px 0px;
+  margin: 0px 0px;
+}
+
+.edit_delete>button{
+  grid-column: 2;
+}
+
+.edit_delete>div {
+  grid-column:1;
 }
