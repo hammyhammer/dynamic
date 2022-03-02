@@ -17,10 +17,10 @@ export default function Register(props) {
       email,
       password
     }
-    const res = await registerUser(user)
-    props.setCurrentUser(res)
-    navigate('/movements')
-  }
+    const res = await registerUser(user);
+    props.setCurrentUser(res);
+    navigate('/movements');
+  };
 
 
   return (
@@ -39,5 +39,5 @@ export default function Register(props) {
 
       </form>
     </div>
-  )
-}
+  );
+};

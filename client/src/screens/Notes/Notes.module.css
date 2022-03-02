@@ -13,7 +13,7 @@
 
 .time {
   font-size: 3vw;
-  margin: 1px
+  margin: 1px;
 }
 
 .title {
@@ -35,8 +35,6 @@
   padding: 3px 1px;
   margin: 10px 30px 42px 30px;
 }
-
-
 
 .edit_delete {
   display: grid;
@@ -102,7 +100,7 @@
   
   .time {
     font-size: 2vw;
-    margin: 1px
+    margin: 1px;
   }
   
   .title {

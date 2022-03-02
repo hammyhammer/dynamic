@@ -4,15 +4,16 @@ import EditNote from '../EditNote/EditNote';
 import notescss from './Notes.module.css';
 
 export default function Notes(props) {
-  const [currentUser, setCurrentUser] = useState(null)
+  const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
     const getUser = async () => {
-      const user = await verify()
-      setCurrentUser(user)
+      const user = await verify();
+      setCurrentUser(user);
     }
-    getUser()
-  }, [])
+    getUser();
+  }, []);
+
   return (
     <div className={notescss.whole}>
       {props.notes &&
@@ -41,6 +42,5 @@ export default function Notes(props) {
         ))
       }
     </div>
-  )
-}
-
+  );
+};

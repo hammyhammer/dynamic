@@ -1,6 +1,5 @@
 /* Media query for iPhone 6/7/8 */
 .whole {
-  /* background-image: url("https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
   background-image: url("https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: 75% 25%;
@@ -8,9 +7,8 @@
   opacity: 0.95;
   border: 2px solid black;
   height: 100vh;
-  /* filter: grayscale(100%) */
 }
-/* profile of a dude icon between create account and username  */
+
 .header {
   font-size: 4.5vw;
   margin: 75px 90px 100px 90px;
@@ -47,15 +45,11 @@
   font-size: 3vw;
   margin: 50px 150px;
   padding: 10px;
-  /* text-decoration: underline; */
   background-image: linear-gradient(purple, rgb(80, 9, 80));
   color: white;
-  /* background-color: rgb(164, 45, 164); */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
-
-
 
 /* Media query for iPad mini */
 @media only screen and (min-width:760px) {

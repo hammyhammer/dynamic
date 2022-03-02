@@ -3,7 +3,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2.5vw;
-  margin: 12px 0px
+  margin: 12px 0px;
 }
 
 .edit_form {
@@ -45,7 +45,7 @@
 @media only screen and (min-width:1250px) {
   .edit_entry {
     font-size: 2.5vw;
-    margin: 12px 0px
+    margin: 12px 0px;
   }
   
   .edit_form {

@@ -1,12 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Layout from '../../components/Layout/Layout'
-import homecss from './HomeMovements.module.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Layout from '../../components/Layout/Layout';
+import homecss from './HomeMovements.module.css';
 
 export default function HomeMovements(props) {
-  // console.log(props.currentUser)
   return (
-
     <div className={homecss.whole}>
       {props.currentUser ?
         <>
@@ -49,6 +47,5 @@ export default function HomeMovements(props) {
         </>
       }
     </div>
-  )
-
-}
+  );
+};

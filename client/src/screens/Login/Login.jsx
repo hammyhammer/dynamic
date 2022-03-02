@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { loginUser } from '../../services/users';
 import { useNavigate } from 'react-router-dom';
-import logincss from './Login.module.css'
+import logincss from './Login.module.css';
 
 export default function Login(props) {
   const [username, setUsername] = useState('');
@@ -14,18 +14,18 @@ export default function Login(props) {
     const user = {
       username,
       password,
-    }
-    const res = await loginUser(user)
-    props.setCurrentUser(res)
-    navigate('/movements')
-  }
+    };
+    const res = await loginUser(user);
+    props.setCurrentUser(res);
+    navigate('/movements');
+  };
 
   const registerPath = () => {
-    navigate('/register')
-  }
+    navigate('/register');
+  };
   const guestPath = () => {
-    navigate('/movements')
-  }
+    navigate('/movements');
+  };
 
   return (
     <div className={logincss.whole}>
@@ -43,9 +43,9 @@ export default function Login(props) {
       </div>
       <br />
       <div className={logincss.nonusers}>
-      <button className={logincss.register} onClick={registerPath}>Signup here</button>
-      <button className={logincss.guest} onClick={guestPath}>Guest</button>
+        <button className={logincss.register} onClick={registerPath}>Signup here</button>
+        <button className={logincss.guest} onClick={guestPath}>Guest</button>
       </div>
     </div>
-  )
-}
+  );
+};

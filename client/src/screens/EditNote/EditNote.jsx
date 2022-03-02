@@ -54,4 +54,4 @@ export default function EditNote(props) {
       {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
     </div>
   );
-}
+};

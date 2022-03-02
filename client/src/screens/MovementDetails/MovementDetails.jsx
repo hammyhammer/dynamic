@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/Layout';
 import PostNote from '../PostNote/PostNote';
 import { createNote, deleteNote, getUserNotes, updateNote } from '../../services/notes';
 import Notes from '../Notes/Notes';
-import random_detailcss from './MovementDetails.module.css'
+import random_detailcss from './MovementDetails.module.css';
 
 export default function MovementDetails(props) {
   const [movement, setMovement] = useState([]);
@@ -39,10 +39,8 @@ export default function MovementDetails(props) {
     setToggle(prevToggle => !prevToggle);
   };
 
-  let description = movement?.description
-  let cues = description?.split(". ")
-  // let finalDescription = '\u2022' + cues?.join("\n\u2022")
-
+  let description = movement?.description;
+  let cues = description?.split(". ");
 
   return (
     <Layout>
@@ -56,7 +54,6 @@ export default function MovementDetails(props) {
             </p>
 
           ))
-
         }
         < img
           src={movement?.image}
@@ -71,10 +68,7 @@ export default function MovementDetails(props) {
           </>
           :
           <p className={random_detailcss.guest}>Only users can leave a note</p>
-
-
         }
-
       </div>
     </Layout>
   );

@@ -1,5 +1,4 @@
 /* Default Phone view (iPhone 6/7/8) */
-
 .whole {
   background-image: url("https://images.pexels.com/photos/6455928/pexels-photo-6455928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
@@ -9,13 +8,10 @@
   border: 2px solid black;
   height: 100vh;
 }
-/* The Art of League:  */
 
 .welcome {
   font-size: 12vw;
   margin: 20px 0px;
-  /* color: #1e0233; */
-  /* color: purple; */
   color: rgb(150, 11, 114);
   font-family: 'Orbitron', sans-serif;
 }
@@ -36,26 +32,20 @@
   border-radius: 7px;
   font-size: 6.5vw;
   margin: 20px 150px;
-  /* text-decoration: underline; */
   background-color: purple;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  /* background-color: transparent; */
-  /* background-color: #E7D3CC; */
-
 }
 
 .register {
   border-radius: 7px;
   font-size: 6vw;
   margin: 50px 10px 20px 0px;
-  /* background-color: transparent; */
   font-family: 'Roboto', sans-serif;
   text-decoration: underline;
   color: white;
   background-color: black;
   font-weight: bold;
-  /* background-color: #E7D3CC; */
 }
 
 .guest {
@@ -64,13 +54,9 @@
   margin: 80px 0px 0px 10px;
   color: white;
   font-weight: bold;
-
   background-color: black;
-  /* background-color: transparent; */
   font-family: 'Roboto', sans-serif;
   text-decoration: underline;
-
-  /* background-color: #E7D3CC; */
 }
 
 .nonusers {
@@ -138,8 +124,6 @@
     display: flex;
     justify-content: center;
     font-size: 3vw;
-
-    /* width: 30%; */
     padding: 0px 10px;
     margin: 20px 500px;
   }
@@ -158,5 +142,4 @@
   .nonusers {
     margin: 150px 0px;
   }
-
 } 

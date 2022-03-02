@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import randomcss from "./MovementsRandom.module.css";
 
 export default function Movements(props) {
-  const current = new Date()
+  const current = new Date();
 
-  const date = `${current.getMonth() + 1}.${current.getDate()}.${current.getFullYear()}`
+  const date = `${current.getMonth() + 1}.${current.getDate()}.${current.getFullYear()}`;
 
   // const shuffle = (array) => {
   //   let currentIndex = array.length, randomIndex
