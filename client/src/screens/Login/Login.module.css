@@ -6,33 +6,36 @@
   background-repeat: none;
   opacity: 0.95;
   border: 2px solid black;
-  height: 100vh;
+  height: auto;
 }
 
 .welcome {
-  font-size: 12vw;
+  font-size: 10vw;
   margin: 20px 0px;
   color: rgb(150, 11, 114);
   font-family: 'Orbitron', sans-serif;
 }
 
 .username {
-  border-radius: 7px;
+  border-radius: 6.25px;
+  margin: 20px 0px;
   margin-left: 18%;
   margin-right: 18%;
-  /* margin: 20px 75px; */
   font-size: 7vw;
 }
 
 .password {
-  border-radius: 7px;
+  border-radius: 6.25px;
   font-size: 7vw;
-  margin: 20px 75px;
+  margin: 20px 0px;
+  margin-left: 18%;
+  margin-right: 18%;
+
 }
 
 .login {
   border-radius: 7px;
-  font-size: 6.5vw;
+  font-size: 4.5vw;
   margin: 20px 0px;
   margin-left: 36%;
   margin-right: 36%;
@@ -44,8 +47,9 @@
 
 .register {
   border-radius: 7px;
-  font-size: 6vw;
-  margin: 50px 10px 20px 0px;
+  font-size: 4.5vw;
+  margin: 50px 0px 20px 0px;
+  margin-right: 3%;
   font-family: 'Roboto', sans-serif;
   text-decoration: underline;
   color: white;
@@ -55,8 +59,9 @@
 
 .guest {
   border-radius: 7px;
-  font-size: 6vw;
+  font-size: 4.5vw;
   margin: 80px 0px 0px 10px;
+  margin-left: 3%;
   color: white;
   font-weight: bold;
   background-color: black;
@@ -65,72 +70,85 @@
 }
 
 .nonusers {
-  margin: 150px 0px;
+  margin-top: 35%;
+  margin-bottom: 35%;
 }
 
 /* View for iPad mini*/
 
 @media only screen and (min-width:760px) {
   .welcome {
-    font-size: 14vw;
+    font-size: 9vw;
   }
   
   .username {
-    /* margin: 20px 175px; */
-    font-size: 5vw;
-
+    margin: 20px 0px;
+    font-size: 4vw;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .password {
-    margin: 20px 175px;
-    font-size: 5vw;
-
+    margin: 20px 0px;
+    font-size: 4vw;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .login {
-    font-size: 5vw;
-    margin: 20px 275px;
-    text-decoration: underline;  
+    font-size: 3.75vw;
+    margin: 20px 0px;
+    text-decoration: underline;
+    margin-left: 40%;
+    margin-right: 40%;  
   }
 
   .register {
-    font-size: 5vw;
+    font-size: 3.75vw;
     margin: 50px 10px 20px 0px;
+    margin-right: 3%;
+
   }
   
   .guest {
     margin: 80px 0px 0px 20px;
-    font-size: 5vw;
+    font-size: 3.75vw;
+    margin-left: 3%;
 
   }
   
   .nonusers {
     margin: 180px 0px;
     font-size: 5vw;
-
+    margin-top: 40%;
+    margin-bottom: 25%;
   }
 
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1050px) {
   .whole {
     background-size: cover;
     background-position: 50% 50%;
     opacity: 0.95;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .welcome {
     font-size: 7vw;
   }
   
   .username {
-    /* margin: 20px 400px; */
+    margin: 20px 0px;
     font-size: 3vw;
+    margin-left: 34%;
+    margin-right: 34%;
   }
   
   .password {
     font-size: 3vw;
-    margin: 20px 400px;
+    margin: 20px 0px;
+    margin-left: 34%;
+    margin-right: 34%;
   }
   
   .login {
@@ -138,22 +156,29 @@
     justify-content: center;
     font-size: 3vw;
     padding: 0px 10px;
-    margin: 20px 500px;
+    margin: 20px 0px;
+    margin-left: 43%;
+    margin-right: 43%;
   }
   
   .register {
     font-size: 3vw;
     margin: 50px 50px 20px 0px;
+    margin-right: 3%;
+
   }
   
   .guest {
     border-radius: 7px;
     font-size: 3vw;
     margin: 80px 0px 0px 10px;
+    margin-left: 3%;
+
   }
   
   .nonusers {
-    margin: 150px 0px;
+    margin-top: 40%;
+    margin-bottom: 15%;
   }
 } 
 
@@ -163,43 +188,55 @@
     background-size: cover;
     background-position: 50% 50%;
     opacity: 0.95;
-    height: 100vh;
+    /* height: 100%; */
   }
   .welcome {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   
   .username {
-    /* margin: 20px 300px; */
-    font-size: 3vw;
+    margin: 20px 0px;
+    font-size: 2.25vw;
+    margin-left: 38%;
+    margin-right: 38%;
   }
   
   .password {
-    font-size: 3vw;
-    margin: 20px 400px;
+    font-size: 2.25vw;
+    margin: 20px 0px;
+    margin-left: 38%;
+    margin-right: 38%;
   }
   
   .login {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 0px 10px;
-    margin: 20px 500px;
+    margin: 20px 0px;
+    margin-left: 45%;
+    margin-right: 45%;
   }
   
   .register {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 50px 50px 20px 0px;
+    margin-right: 3%;
+
   }
   
   .guest {
     border-radius: 7px;
-    font-size: 3vw;
-    margin: 80px 0px 0px 10px;
+    font-size: 2.5vw;
+    margin: 80px 0px;
+    margin-left: 3%;
+
   }
   
   .nonusers {
     margin: 150px 0px;
+    margin-top: 40%;
+    margin-bottom: 15%;
   }
 
 }
