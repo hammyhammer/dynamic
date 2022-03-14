@@ -5,8 +5,8 @@ export default function CustomMovements() {
   return (
     <Layout>
       <div>
-
-        <select>
+        Coming soon!
+        {/* <select>
           <option>
             Horizontal Push
           </option>
@@ -22,7 +22,7 @@ export default function CustomMovements() {
           <option>
             Legs
           </option>
-        </select>
+        </select> */}
 
       </div>
     </Layout>
