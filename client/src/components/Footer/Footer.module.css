@@ -1,5 +1,6 @@
 .footer {
   position: fixed;
+  width: 100%;
   bottom: 0;
   margin: auto;
   display: flex;
@@ -13,8 +14,8 @@
 .a {
   display: flex;
   justify-content: flex-end;
-  width: 8%;
-  height: 4%;
+  width: 4%;
+  height: 3%;
 }
 
 .link {
@@ -31,13 +32,21 @@
   height: 60%;
 }
 
+@media only screen and (min-width:750px) {
+  .a {
+    width: 4%;
+    height: 4%;
+  }
+}
+
+
 @media only screen and (min-width:1250px) {
   .footer {
-    width: 99.5%;
+    width: 100%;
   }
   
   .a {
-    width: 2%;
-    height: 2%;
+    width: 2.5%;
+    height: 2.5%;
   }
 }

@@ -27,11 +27,16 @@
 }
 .custom_title {
   position: absolute;
-  left: 37%;
+  /* left: 37%;
   width: 25%;
-  top: 60.5%;
+  top: 60.5%; */
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 25%;
+  margin-bottom: 20%;
   color: black;
-  font-family: "Gloria Hallelujah"
+  font-family: "Gloria Hallelujah";
+  border: 2px solid green;
 }
 
 .custom_title_guest {
@@ -44,6 +49,23 @@
   font-size: 3.5vw;
 }
 
+@media only screen and (min-width:440px) {
+  .custom_title {
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 17%;
+  margin-bottom: 20%;
+  }
+}
+
+@media only screen and (min-width:440px) {
+  .custom_title {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 13%;
+    margin-bottom: 20%;
+    }
+  }
 
 /* Ipad Mini */
 @media only screen and (min-width:760px) {
@@ -80,4 +102,11 @@
   .custom_title_guest {
     font-size: 2.55vw;
     }
+
+  .custom_title {
+    margin-left: 39%;
+    margin-right: 39%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
 }

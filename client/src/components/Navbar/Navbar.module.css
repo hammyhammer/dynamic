@@ -55,39 +55,39 @@
   }
 }
 
-@media only screen and (min-width:1250px) {
-.header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  align-content: center;
-  border-bottom: 2px solid black;
-  padding: 0px 0px 15px 0px;
+
+@media only screen and (min-width:1000px) {
+  .header {
+    padding: 0px 0px 15px 0px;
+  }
+  
+  .dynamic {
+    font-size: 2.5vw;
+    margin: 5px 0px 0px 0px;
+  }
+  
+  .calendar {
+    font-size: 2.5vw;
+    margin: 9px 0px 0px 0px;
+  }
+  
+  .logout {
+    margin: 9px 0px 0px 0px;
+    font-size: 2.5vw;
+  }
 }
 
+@media only screen and (min-width:1250px) {
+
 .dynamic {
-  font-family: 'Orbitron', sans-serif;
-  color: rgb(150, 11, 114);
-  font-weight: bold;
-  font-size: 2vw;
-  margin: 5px 0px 0px 0px;
+  font-size: 1.5vw;
 }
 
 .calendar {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(150, 11, 114);
-  font-weight: bold;
-  font-size: 2vw;
-  margin: 7px 0px 0px 0px;
+  font-size: 1.5vw;
 }
 
 .logout {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(150, 11, 114);
-  font-weight: bold;
-  margin: 7px 0px 0px 0px;
-  font-size: 2vw;
+  font-size: 1.5vw;
   }
 }
