@@ -34,9 +34,6 @@ export default function Register(props) {
         <input className={registercss.password} type="password" value={password} placeholder="Password" onChange={(event) => setPassword(event.target.value)} />
         <br />
         <button className={registercss.button}>Register</button>
-
-
-
       </form>
     </div>
   );

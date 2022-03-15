@@ -1,41 +1,50 @@
 /* Media query for iPhone 6/7/8 */
 .whole {
+  height: auto;
+  margin: 0px;
   background-image: url("https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: 75% 25%;
   background-repeat: none;
   opacity: 0.95;
   border: 2px solid black;
-  height: 100vh;
 }
 
 .header {
   font-size: 4.5vw;
-  margin: 75px 90px 100px 90px;
+  margin: 75px 0px 100px 0px;
   color: white;
   border-radius: 10px;
   background-image: linear-gradient(purple, rgb(80, 9, 80));
   font-family: 'Roboto', sans-serif;
   opacity: 1.0;
   font-weight: 900;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .username {
   border-radius: 7px;
-  margin: 20px 100px 20px 100px; 
+  margin: 20px 0px; 
+  margin-left: 18%;
+  margin-right: 18%;
   font-size: 5vw;
 }
 
 .email {
   border-radius: 7px;
-  margin: 20px 100px;
+  margin: 20px 0px;
+  margin-left: 18%;
+  margin-right: 18%;
   font-size: 5vw;
 
 }
 
 .password {
   border-radius: 7px;
-  margin: 20px 100px;
+  margin: 20px 0px;
+  margin-left: 18%;
+  margin-right: 18%;
   font-size: 5vw;
 
 }
@@ -43,65 +52,86 @@
 .button {
   border-radius: 7px;
   font-size: 3vw;
-  margin: 50px 150px;
+  margin: 50px 0px;
   padding: 10px;
   background-image: linear-gradient(purple, rgb(80, 9, 80));
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  margin-left: 36%;
+  margin-right: 36%;
 }
 
 /* Media query for iPad mini */
 @media only screen and (min-width:760px) {
   .header {
-    font-size: 5vw;
+    font-size: 3.5vw;
+    margin-left: 23%;
+    margin-right: 23%;
   }
   
   .username {
-    margin: 20px 150px;
-    font-size: 5vw;
+    margin: 20px 0px;
+    font-size: 3.25vw;
+    margin-left: 26%;
+    margin-right: 26%;
   }
   
   .email {
-    margin: 20px 150px;
-    font-size: 5vw;
+    margin: 20px 0px;
+    font-size: 3.25vw;
+    margin-left: 26%;
+    margin-right: 26%;
   }
   
   .password {
-    margin: 20px 150px;
-    font-size: 5vw;
+    margin: 20px 0px;
+    font-size: 3.25vw;
+    margin-left: 26%;
+    margin-right: 26%;
   }
   
   .button {
-    font-size: 3.5vw;
-    margin: 140px 300px;
+    font-size: 3vw;
+    margin: 140px 0px;
+    margin-left: 40%;
+    margin-right: 40%;
   }
 }
 
 @media only screen and (min-width:1250px) {
   .header {
     font-size: 3.5vw;
-    margin: 75px 300px 100px 300px;
-
+    margin: 75px 0px 100px 0px;
+    margin-left: 28%;
+    margin-right: 28%;
   }
   
   .username {
-    margin: 20px 350px;
+    margin: 20px 0px;
     font-size: 2.5vw;
+    margin-left: 32%;
+    margin-right: 32%;
   }
   
   .email {
-    margin: 20px 350px;
+    margin: 20px 0px;
     font-size: 2.5vw;
+    margin-left: 32%;
+    margin-right: 32%;
   }
   
   .password {
-    margin: 20px 350px;
+    margin: 20px 0px;
     font-size: 2.5vw;
+    margin-left: 32%;
+    margin-right: 32%;
   }
   
   .button {
     font-size: 2.5vw;
-    margin: 140px 570px;
+    margin: 140px 0px;
+    margin-left: 43%;
+    margin-right: 43%;
   }
 }
