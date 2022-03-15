@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div className={navcss.whole}>
       {currentUser ?
         <div className={navcss.header}>
           <Link className={navcss.dynamic} to="/movements">Dynamic</Link>

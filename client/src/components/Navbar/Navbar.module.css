@@ -1,3 +1,7 @@
+/* .whole {
+  background-color: lightgray
+} */
+
 .header {
   display: flex;
   align-items: flex-start;
