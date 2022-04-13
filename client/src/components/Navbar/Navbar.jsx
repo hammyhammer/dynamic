@@ -25,7 +25,7 @@ export default function Navbar() {
       {currentUser ?
         <div className={navcss.header}>
           <Link className={navcss.dynamic} to="/movements">Dynamic</Link>
-          <Link className={navcss.calendar} to="/calendar">Your Calendar</Link>
+          {/* <Link className={navcss.calendar} to="/calendar">Your Calendar</Link> */}
           <Link className={navcss.logout} to='/' onClick={logout}>Logout</Link>
         </div>
         :

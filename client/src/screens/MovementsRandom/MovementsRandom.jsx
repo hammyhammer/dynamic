@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import randomcss from "./MovementsRandom.module.css";
 
 export default function Movements(props) {
-  const current = new Date();
-
-  const date = `${current.getMonth() + 1}.${current.getDate()}.${current.getFullYear()}`;
+  const currentDate = function () {
+    const current = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let monthName = months[current.getMonth()]
+    return `${monthName} ${current.getDate()}, ${current.getFullYear()}`;
+  }
 
   // const shuffle = (array) => {
   //   let currentIndex = array.length, randomIndex
@@ -22,7 +25,7 @@ export default function Movements(props) {
 
   return (
     <div className={randomcss.whole}>
-      <h3 className={randomcss.date}>{`Training Set: ${date}`}</h3>
+      <h3 className={randomcss.date}>{`Training Set: ${currentDate()}`}</h3>
       {
         props.movements.map(movement => (
           <Link className={randomcss.movements} key={movement.id} to={`/movements/${movement.id}`}>
@@ -38,3 +41,4 @@ export default function Movements(props) {
     </div>
   );
 };
+

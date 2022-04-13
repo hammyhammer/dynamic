@@ -5,7 +5,6 @@ import notescss from './Notes.module.css';
 
 export default function Notes(props) {
   const [currentUser, setCurrentUser] = useState(null);
-
   useEffect(() => {
     const getUser = async () => {
       const user = await verify();
