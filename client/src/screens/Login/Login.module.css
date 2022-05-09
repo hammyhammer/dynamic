@@ -6,7 +6,7 @@
   background-repeat: none;
   opacity: 0.95;
   border: 2px solid black;
-  height: auto;
+  /* height: auto; */
 }
 
 .welcome {
@@ -40,7 +40,7 @@
   margin: 20px 0px;
   margin-left: 36%;
   margin-right: 36%;
-  
+
   background-color: purple;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -81,7 +81,7 @@
   .welcome {
     font-size: 9vw;
   }
-  
+
   .username {
     margin: 20px 0px;
     font-size: 4vw;
@@ -101,7 +101,7 @@
     margin: 20px 0px;
     text-decoration: underline;
     margin-left: 40%;
-    margin-right: 40%;  
+    margin-right: 40%;
   }
 
   .register {
@@ -110,14 +110,14 @@
     margin-right: 3%;
 
   }
-  
+
   .guest {
     margin: 80px 0px 0px 20px;
     font-size: 3.75vw;
     margin-left: 3%;
 
   }
-  
+
   .nonusers {
     margin: 180px 0px;
     font-size: 5vw;
@@ -134,24 +134,25 @@
     opacity: 0.95;
     /* height: 100vh; */
   }
+
   .welcome {
     font-size: 7vw;
   }
-  
+
   .username {
     margin: 20px 0px;
     font-size: 3vw;
     margin-left: 34%;
     margin-right: 34%;
   }
-  
+
   .password {
     font-size: 3vw;
     margin: 20px 0px;
     margin-left: 34%;
     margin-right: 34%;
   }
-  
+
   .login {
     display: flex;
     justify-content: center;
@@ -161,14 +162,14 @@
     margin-left: 43%;
     margin-right: 43%;
   }
-  
+
   .register {
     font-size: 3vw;
     margin: 50px 50px 20px 0px;
     margin-right: 3%;
 
   }
-  
+
   .guest {
     border-radius: 7px;
     font-size: 3vw;
@@ -176,12 +177,12 @@
     margin-left: 3%;
 
   }
-  
+
   .nonusers {
     margin-top: 40%;
     margin-bottom: 15%;
   }
-} 
+}
 
 
 @media only screen and (min-width:1400px) {
@@ -191,24 +192,25 @@
     opacity: 0.95;
     /* height: 100%; */
   }
+
   .welcome {
     font-size: 6vw;
   }
-  
+
   .username {
     margin: 20px 0px;
     font-size: 2.25vw;
     margin-left: 38%;
     margin-right: 38%;
   }
-  
+
   .password {
     font-size: 2.25vw;
     margin: 20px 0px;
     margin-left: 38%;
     margin-right: 38%;
   }
-  
+
   .login {
     display: flex;
     justify-content: center;
@@ -218,14 +220,14 @@
     margin-left: 45%;
     margin-right: 45%;
   }
-  
+
   .register {
     font-size: 2.5vw;
     margin: 50px 50px 20px 0px;
     margin-right: 3%;
 
   }
-  
+
   .guest {
     border-radius: 7px;
     font-size: 2.5vw;
@@ -233,7 +235,7 @@
     margin-left: 3%;
 
   }
-  
+
   .nonusers {
     margin: 150px 0px;
     margin-top: 40%;
@@ -243,7 +245,4 @@
 }
 
 
-@media only screen and (min-width:1700px) {
-
-
-}
+@media only screen and (min-width:1700px) {}

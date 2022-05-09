@@ -43,8 +43,8 @@ export default function MovementDetails(props) {
   let cues = description?.split(". ");
 
   return (
-    <Layout>
-      <div className={random_detailcss.whole}>
+    <div className={random_detailcss.whole}>
+      <Layout>
         <h3 className={random_detailcss.name}>{movement?.name}</h3>
         <p className={random_detailcss.cues}>Cues:</p>
         {
@@ -68,7 +68,8 @@ export default function MovementDetails(props) {
           :
           <p className={random_detailcss.guest}>Only users can leave a note</p>
         }
-      </div>
-    </Layout>
+      </Layout>
+
+    </div>
   );
 };
