@@ -5,7 +5,7 @@
 .header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   border-bottom: 2px solid black;
   padding: 0px 0px 15px 0px;
@@ -16,7 +16,7 @@
   color: rgb(150, 11, 114);
   font-weight: bold;
   font-size: 5vw;
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 0px 10px;
 }
 
 .calendar {
@@ -33,7 +33,7 @@
   font-family: 'Roboto', sans-serif;
   color: rgb(150, 11, 114);
   font-weight: bold;
-  margin: 12px 0px 0px 0px;
+  margin: 12px 10px 0px 0px;
   font-size: 4vw;
 }
 
@@ -42,17 +42,17 @@
   .header {
     padding: 0px 0px 15px 0px;
   }
-  
+
   .dynamic {
     font-size: 4vw;
     margin: 5px 0px 0px 0px;
   }
-  
+
   .calendar {
     font-size: 4vw;
     margin: 9px 0px 0px 0px;
   }
-  
+
   .logout {
     margin: 9px 0px 0px 0px;
     font-size: 4vw;
@@ -64,17 +64,17 @@
   .header {
     padding: 0px 0px 15px 0px;
   }
-  
+
   .dynamic {
     font-size: 2.5vw;
     margin: 5px 0px 0px 0px;
   }
-  
+
   .calendar {
     font-size: 2.5vw;
     margin: 9px 0px 0px 0px;
   }
-  
+
   .logout {
     margin: 9px 0px 0px 0px;
     font-size: 2.5vw;
@@ -83,15 +83,15 @@
 
 @media only screen and (min-width:1250px) {
 
-.dynamic {
-  font-size: 1.5vw;
-}
+  .dynamic {
+    font-size: 1.5vw;
+  }
 
-.calendar {
-  font-size: 1.5vw;
-}
+  .calendar {
+    font-size: 1.5vw;
+  }
 
-.logout {
-  font-size: 1.5vw;
+  .logout {
+    font-size: 1.5vw;
   }
 }
