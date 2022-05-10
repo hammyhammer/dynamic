@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import editcss from './EditNote.module.css';
-
+// import Modal from '../Modal/Modal';
 export default function EditNote(props) {
   const specificNote = props.notes?.find(note => {
     return note.id;
@@ -50,6 +50,7 @@ export default function EditNote(props) {
 
   return (
     <div>
+      {/* <Modal /> */}
       <button className={editcss.edit_entry} onClick={() => setToggle((prevToggle) => !prevToggle)}>Edit Entry</button>
       {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
     </div>
