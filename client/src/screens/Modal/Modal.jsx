@@ -1,16 +1,23 @@
-import React from 'react'
+import { useState } from 'react'
 import modalcss from './Modal.module.css';
 
-export default function Modal() {
+export default function Modal(props) {
+
+  if (!props.show) {
+    return null
+  }
+
   return (
-    <div className={modalcss.modal}>
-      <div className={modalcss.main_content}>
-        <div className={modalcss.header}>
-          <h4 className={modalcss.title}>Edit your Entry</h4>
-        </div>
-        <div className={modalcss.body}>Main edit Body</div>
-        <div classname={modalcss.footer}>
-          <button classname={modalcss.button}>Close</button>
+    <div>
+      <div className={modalcss.modal}>
+        <div className={modalcss.main_content}>
+          <div className={modalcss.header}>
+            <h4 className={modalcss.title}>Edit your Entry</h4>
+          </div>
+          <div className={modalcss.body}>Main edit Body</div>
+          <div className={modalcss.footer}>
+            <button onClick={props.onClose} className={modalcss.button}>Close</button>
+          </div>
         </div>
       </div>
     </div>
