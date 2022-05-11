@@ -14,12 +14,13 @@ export default function Modal(props) {
           <div className={modalcss.header}>
             <h4 className={modalcss.title}>Edit your Entry</h4>
           </div>
-          <div className={modalcss.body}>Main edit Body</div>
+          <div className={modalcss.body}>Main body
+          </div>
           <div className={modalcss.footer}>
             <button onClick={props.onClose} className={modalcss.button}>Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }

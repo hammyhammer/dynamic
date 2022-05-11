@@ -30,6 +30,7 @@ export default function EditNote(props) {
       content
     };
     props.handleNoteEdit(props.note.id, note);
+    setShow(false)
   };
 
   // const ShowEditForm = () => {
@@ -50,6 +51,7 @@ export default function EditNote(props) {
   //   );
   // };
   const ShowEditForm = () => {
+
     return (
       <div>
         <div className={editcss.modal}>
@@ -66,12 +68,14 @@ export default function EditNote(props) {
                   className={editcss.edit_form}
 
                 />}
-                <button className={editcss.edit_button}>Update</button>
+                <button onClose={() => setShow(false)} className={editcss.edit_button}>Update</button>
               </form>
 
             </div>
             <div className={editcss.footer}>
-              <button onClick={props.onClose} onClose={() => setShow(false)} show={show} className={editcss.button}>Close</button>
+              {/* <button className={editcss.edit_button}>Update</button> */}
+
+              {/* <button onClick={() => setShow(false)} className={editcss.button}>Close</button> */}
             </div>
           </div>
         </div>
@@ -84,9 +88,11 @@ export default function EditNote(props) {
   return (
     <div>
       {/* <button onClick={() => setShow(true)}>Edit Entry</button> */}
-      {/* <Modal onClose={() => setShow(false)} show={show} /> */}
-      <button className={editcss.edit_entry} onClick={() => setToggle((prevToggle) => !prevToggle)}>Edit Entry</button>
+      {/* <Modal onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)} show={show} /> */}
+      <button className={editcss.edit_entry} onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)}>Edit Entry</button>
       {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
+
+      {/* {toggle && <ShowEditForm onClose={() => setShow(false)} show={show} onChange={(e) => { e.preventDefault() }} />} */}
     </div>
   );
 };
