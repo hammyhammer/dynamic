@@ -7,34 +7,67 @@
 }
 
 .edit_form {
-  padding: 1px 2px;
+  /* padding: 1px 2px;
   font-size: 2.5vw;
   margin: 0px 70px;
   width: 80%;
   position: relative;
-  right: 50%;
+  right: 50%; */
 }
 
 .edit_button {
-  margin: 0px 110px;
+  /* margin: 0px 110px;
   text-decoration: underline;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2vw;
   width: 70%;
   position: relative;
-  right: 71%;
+  right: 71%; */
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content {
+  width: 500px;
+  background-color: white;
+}
+
+.header,
+.footer {
+  padding: 10px
+}
+
+.title {
+  margin: 0;
+}
+
+.body {
+  padding: 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (min-width:760px) {
   .edit_entry {
     font-size: 2.5vw;
   }
+
   .edit_form {
     width: 50%;
     right: 0.5%;
   }
-  
+
   .edit_button {
     font-size: 2.25vw;
     width: 40%;
@@ -47,12 +80,12 @@
     font-size: 2.5vw;
     margin: 12px 0px;
   }
-  
+
   .edit_form {
     width: 30%;
     left: 23%;
   }
-  
+
   .edit_button {
     margin: 0px 110px;
     font-size: 2vw;

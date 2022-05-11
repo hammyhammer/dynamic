@@ -32,23 +32,52 @@ export default function EditNote(props) {
     props.handleNoteEdit(props.note.id, note);
   };
 
+  // const ShowEditForm = () => {
+  //   return (
+  //     <div>
+  //       <form onSubmit={handleSubmit}>
+  //         {batman && < input
+  //           type='text' autoFocus
+  //           onChange={(event) => setContent(event.target.value)}
+  //           value={content}
+  //           className={editcss.edit_form}
+
+  //         />}
+  // <button className={editcss.edit_button}>Update</button>
+
+  // </form>
+  //     </div>
+  //   );
+  // };
   const ShowEditForm = () => {
     return (
       <div>
-        <form onSubmit={handleSubmit}>
-          {batman && < input
-            type='text' autoFocus
-            onChange={(event) => setContent(event.target.value)}
-            value={content}
-            className={editcss.edit_form}
+        <div className={editcss.modal}>
+          <div className={editcss.main_content}>
+            <div className={editcss.header}>
+              <h4 className={editcss.title}>Edit your Entry</h4>
+            </div>
+            <div className={editcss.body}>
+              <form onSubmit={handleSubmit}>
+                {batman && < input
+                  type='text' autoFocus
+                  onChange={(event) => setContent(event.target.value)}
+                  value={content}
+                  className={editcss.edit_form}
 
-          />}
-          <button className={editcss.edit_button}>Update</button>
+                />}
+                <button className={editcss.edit_button}>Update</button>
+              </form>
 
-        </form>
+            </div>
+            <div className={editcss.footer}>
+              <button onClick={props.onClose} onClose={() => setShow(false)} show={show} className={editcss.button}>Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  };
+    )
+  }
 
 
 
