@@ -23,7 +23,7 @@ export default function EditNote(props) {
     setBatman(true);
   }, [id, props.notes]);
 
-  const handleSubmit = (event) => {
+  const handleEditSubmit = (event) => {
     event.preventDefault();
     const note = {
       title,
@@ -32,6 +32,10 @@ export default function EditNote(props) {
     props.handleNoteEdit(props.note.id, note);
     setShow(false)
   };
+
+  const exit = () => {
+    setShow(false)
+  }
 
   // const ShowEditForm = () => {
   //   return (
@@ -50,8 +54,10 @@ export default function EditNote(props) {
   //     </div>
   //   );
   // };
-  const ShowEditForm = () => {
 
+  // MERGED VERSION BELOW
+
+  const ShowEditForm = () => {
     return (
       <div>
         <div className={editcss.modal}>
@@ -60,7 +66,7 @@ export default function EditNote(props) {
               <h4 className={editcss.title}>Edit your Entry</h4>
             </div>
             <div className={editcss.body}>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleEditSubmit}>
                 {batman && < input
                   type='text' autoFocus
                   onChange={(event) => setContent(event.target.value)}
@@ -68,8 +74,11 @@ export default function EditNote(props) {
                   className={editcss.edit_form}
 
                 />}
-                <button onClose={() => setShow(false)} className={editcss.edit_button}>Update</button>
+                {/* <button onClose={() => setShow(false)} className={editcss.edit_button}>Update</button> */}
+                {/* <button onClick={props.onClose} className={editcss.button}>Close</button> */}
+                <button className={editcss.edit_button}>Update</button>
               </form>
+              <button onClick={() => exit}>Close</button>
 
             </div>
             <div className={editcss.footer}>
@@ -87,9 +96,19 @@ export default function EditNote(props) {
 
   return (
     <div>
-      {/* <button onClick={() => setShow(true)}>Edit Entry</button> */}
+      {/* <button onClick={() => setShow(true)}>Modal Button</button> */}
       {/* <Modal onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)} show={show} /> */}
-      <button className={editcss.edit_entry} onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)}>Edit Entry</button>
+
+      {/* New Test Below */}
+      {/* <button className={editcss.edit_entry} onClick={() => { setToggle((prevToggle) => !prevToggle) }} show={show.toString()} onClose={() => setShow(false)}>Modal Button</button>
+      {toggle && <Modal onChange={(e) => { e.preventDefault() }} />} */}
+      {/* <Modal onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)} show={show} /> */}
+
+
+      {/* <button className={editcss.edit_entry} onClick={() => setToggle((prevToggle) => !prevToggle)} onClose={() => setShow(false)}>Edit Entry</button> */}
+
+      {/* Original is below */}
+      <button className={editcss.edit_entry} onClick={() => { setToggle((prevToggle) => !prevToggle) }} show={show.toString()} onClose={() => setShow(false)}>Edit Entry</button>
       {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
 
       {/* {toggle && <ShowEditForm onClose={() => setShow(false)} show={show} onChange={(e) => { e.preventDefault() }} />} */}
