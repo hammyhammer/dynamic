@@ -6,7 +6,6 @@ import Modal from '../Modal/Modal';
 export default function EditNote(props) {
   const [show, setShow] = useState(false)
 
-
   const specificNote = props.notes?.find(note => {
     return note.id;
   })
@@ -30,11 +29,12 @@ export default function EditNote(props) {
       content
     };
     props.handleNoteEdit(props.note.id, note);
-    setShow(false)
+
   };
 
-  const exit = () => {
+  const exit = (event) => {
     setShow(false)
+    console.log("closed")
   }
 
   // const ShowEditForm = () => {
@@ -60,8 +60,8 @@ export default function EditNote(props) {
   const ShowEditForm = () => {
     return (
       <div>
-        <div className={editcss.modal}>
-          <div className={editcss.main_content}>
+        <div className={editcss.modal} onClick={props.onClose}>
+          <div className={editcss.main_content} onClick={event => event.stopPropagation()}>
             <div className={editcss.header}>
               <h4 className={editcss.title}>Edit your Entry</h4>
             </div>
@@ -78,7 +78,7 @@ export default function EditNote(props) {
                 {/* <button onClick={props.onClose} className={editcss.button}>Close</button> */}
                 <button className={editcss.edit_button}>Update</button>
               </form>
-              <button onClick={() => exit}>Close</button>
+              <button onClick={props.onClose}>Close</button>
 
             </div>
             <div className={editcss.footer}>
@@ -110,7 +110,6 @@ export default function EditNote(props) {
       {/* Original is below */}
       <button className={editcss.edit_entry} onClick={() => { setToggle((prevToggle) => !prevToggle) }} show={show.toString()} onClose={() => setShow(false)}>Edit Entry</button>
       {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
-
       {/* {toggle && <ShowEditForm onClose={() => setShow(false)} show={show} onChange={(e) => { e.preventDefault() }} />} */}
     </div>
   );
