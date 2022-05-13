@@ -9,7 +9,7 @@ export default function Login(props) {
 
   const [guest, setGuest] = useState({
     email: "guest@guest.com",
-    password: guest,
+    password: "guest",
   });
 
   const navigate = useNavigate();

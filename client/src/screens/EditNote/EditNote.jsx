@@ -37,23 +37,23 @@ export default function EditNote(props) {
     console.log("closed")
   }
 
-  // const ShowEditForm = () => {
-  //   return (
-  //     <div>
-  //       <form onSubmit={handleSubmit}>
-  //         {batman && < input
-  //           type='text' autoFocus
-  //           onChange={(event) => setContent(event.target.value)}
-  //           value={content}
-  //           className={editcss.edit_form}
+  const ShowGuestEditForm = () => {
+    return (
+      <div>
+        <form onSubmit={handleEditSubmit}>
+          {batman && < input
+            type='text' autoFocus
+            onChange={(event) => setContent(event.target.value)}
+            value={content}
+            className={editcss.edit_form}
 
-  //         />}
-  // <button className={editcss.edit_button}>Update</button>
+          />}
+          <button className={editcss.edit_button}>Update</button>
 
-  // </form>
-  //     </div>
-  //   );
-  // };
+        </form>
+      </div>
+    );
+  };
 
   // MERGED VERSION BELOW
 
@@ -109,7 +109,7 @@ export default function EditNote(props) {
 
       {/* Original is below */}
       <button className={editcss.edit_entry} onClick={() => { setToggle((prevToggle) => !prevToggle) }} show={show.toString()} onClose={() => setShow(false)}>Edit Entry</button>
-      {toggle && <ShowEditForm onChange={(e) => { e.preventDefault() }} />}
+      {toggle && <ShowGuestEditForm onChange={(e) => { e.preventDefault() }} />}
       {/* {toggle && <ShowEditForm onClose={() => setShow(false)} show={show} onChange={(e) => { e.preventDefault() }} />} */}
     </div>
   );
