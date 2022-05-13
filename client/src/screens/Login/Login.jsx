@@ -7,6 +7,11 @@ export default function Login(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const [guest, setGuest] = useState({
+    email: "guest@guest.com",
+    password: guest,
+  });
+
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -15,6 +20,7 @@ export default function Login(props) {
       username,
       password,
     };
+
     const res = await loginUser(user);
     props.setCurrentUser(res);
     navigate('/movements');
@@ -23,7 +29,10 @@ export default function Login(props) {
   const registerPath = () => {
     navigate('/register');
   };
+
   const guestPath = () => {
+    const user = loginUser(guest);
+    props.setCurrentUser(user);
     navigate('/movements');
   };
 
