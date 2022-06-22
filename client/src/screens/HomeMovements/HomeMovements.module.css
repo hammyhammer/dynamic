@@ -1,6 +1,6 @@
 .whole {
   height: 100vh;
-  background-image: linear-gradient(lightgray, rgb(34, 1, 34)); 
+  background-image: linear-gradient(lightgray, rgb(34, 1, 34));
   width: 100%;
 }
 
@@ -16,6 +16,7 @@
   font-weight: bold;
   font-size: 5vw;
 }
+
 .random_title {
   position: absolute;
   background-color: black;
@@ -25,6 +26,7 @@
   color: white;
   font-family: monospace;
 }
+
 .custom_title {
   position: absolute;
   /* left: 37%;
@@ -50,14 +52,16 @@
   color: black;
   font-family: "Gloria Hallelujah";
   font-size: 3.5vw;
+  border: 1px red solid;
+
 }
 
 @media only screen and (min-width:440px) {
   .custom_title {
-  margin-left: 33%;
-  margin-right: 33%;
-  margin-top: 17%;
-  margin-bottom: 20%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 17%;
+    margin-bottom: 20%;
   }
 }
 
@@ -67,14 +71,15 @@
     margin-right: 33%;
     margin-top: 13%;
     margin-bottom: 20%;
-    }
-    .custom_title_guest {
+  }
+
+  .custom_title_guest {
     margin-left: 33%;
     margin-right: 33%;
     margin-top: 20%;
     margin-bottom: 20%;
-    }
   }
+}
 
 @media only screen and (min-width:560px) {
   .custom_title_guest {
@@ -82,7 +87,7 @@
     margin-right: 33%;
     margin-top: 15%;
     margin-bottom: 20%;
-    }
+  }
 }
 
 @media only screen and (min-width:650px) {
@@ -91,7 +96,7 @@
     margin-right: 33%;
     margin-top: 12%;
     margin-bottom: 20%;
-    }
+  }
 }
 
 
@@ -102,7 +107,7 @@
     width: 100%;
     height: 390px;
   }
-  
+
   .mini_titles {
     font-size: 4vw;
   }
@@ -111,7 +116,7 @@
     font-size: 3vw;
     margin-left: 37%;
     margin-right: 37%;
-    margin-top: 13%;
+    margin-top: 16%;
     margin-bottom: 20%;
   }
 }
@@ -122,17 +127,19 @@
     width: 75%;
     height: 350px;
   }
-  
+
   .mini_titles {
     font-size: 2vw;
   }
+
   .random_title {
     right: 57.5%;
     width: 30%;
   }
+
   .custom_title_guest {
     font-size: 2.55vw;
-    }
+  }
 
   .custom_title {
     margin-left: 39%;
@@ -146,5 +153,5 @@
     margin-right: 37%;
     margin-top: 7%;
     margin-bottom: 20%;
-    }
+  }
 }

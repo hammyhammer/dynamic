@@ -9,19 +9,19 @@ export default function Movements(props) {
     return `${monthName} ${current.getDate()}, ${current.getFullYear()}`;
   }
 
-  // const shuffle = (array) => {
-  //   let currentIndex = array.length, randomIndex
-  //   while (currentIndex != 0) {
-  //     randomIndex = Math.floor(Math.random() * currentIndex);
-  //     currentIndex--;
+  const shuffle = (array) => {
+    let currentIndex = array.length, randomIndex
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
 
-  //     [array[currentIndex], array[randomIndex]] = [
-  //       array[randomIndex], array[currentIndex]]
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]]
 
-  //   }
-  //   return array
-  // }
-  // shuffle(props.movements)
+    }
+    return array
+  }
+  shuffle(props.movements)
 
   return (
     <div className={randomcss.whole}>
