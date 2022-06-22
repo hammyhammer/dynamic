@@ -55,7 +55,7 @@ export default function Login(props) {
 
         </form>
       </div>
-      <br />
+
       <div className={logincss.nonusers}>
         <button className={logincss.register} onClick={registerPath}>Signup here</button>
         <button className={logincss.guest} onClick={guestPath}>Continue as Guest</button>
