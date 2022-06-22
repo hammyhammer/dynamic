@@ -1,13 +1,12 @@
 .footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   margin: auto;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   justify-content: flex-end;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background: lightgray;
 }
 
@@ -44,7 +43,7 @@
   .footer {
     width: 100%;
   }
-  
+
   .a {
     width: 2.5%;
     height: 2.5%;
