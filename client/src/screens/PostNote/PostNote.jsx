@@ -30,7 +30,7 @@ export default function PostNote(props) {
             <form onSubmit={handleSubmit}>
               {/* <input className={postcss.title} type="text" value={title} placeholder="Entry Title" onChange={(e) => setTitle(e.target.value)} /> */}
               <input className={postcss.content} type="text" value={content} placeholder="How did you do today?" onChange={(e) => setContent(e.target.value)} />
-              <button className={postcss.button}>Potato</button>
+              <button className={postcss.button}>Save Entry</button>
             </form>
           </div>
           :
