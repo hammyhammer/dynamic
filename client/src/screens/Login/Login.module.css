@@ -46,14 +46,13 @@
 }
 
 .dead_space {
-  border: 1px solid transparent;
+  border: 1px solid red;
   margin: 22%
 }
 
 .nonusers {
   display: flex;
   flex-direction: column;
-  /* margin-top: 50%; */
   padding: 0px 100px;
 }
 
@@ -110,27 +109,22 @@
     margin-right: 40%;
   }
 
-  .register {
-    font-size: 3.75vw;
-    margin: 50px 10px 20px 0px;
-    margin-right: 3%;
-
-  }
-
-  .guest {
-    margin: 80px 0px 0px 20px;
-    font-size: 3.75vw;
-    margin-left: 3%;
-
+  .dead_space {
+    margin: 25%
   }
 
   .nonusers {
-    margin: 180px 0px;
     font-size: 5vw;
-    margin-top: 40%;
-    margin-bottom: 25%;
+    padding: 0px 200px;
   }
 
+  .register {
+    font-size: 3.75vw;
+  }
+
+  .guest {
+    font-size: 3.75vw;
+  }
 }
 
 @media only screen and (min-width:1050px) {
@@ -165,28 +159,24 @@
     font-size: 3vw;
     padding: 0px 10px;
     margin: 20px 0px;
-    margin-left: 43%;
-    margin-right: 43%;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .dead_space {
+    margin: 27%
+  }
+
+  .nonusers {
+    padding: 0px 375px;
   }
 
   .register {
     font-size: 3vw;
-    margin: 50px 50px 20px 0px;
-    margin-right: 3%;
-
   }
 
   .guest {
-    border-radius: 7px;
     font-size: 3vw;
-    margin: 80px 0px 0px 10px;
-    margin-left: 3%;
-
-  }
-
-  .nonusers {
-    margin-top: 40%;
-    margin-bottom: 15%;
   }
 }
 
