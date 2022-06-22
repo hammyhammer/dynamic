@@ -46,7 +46,7 @@
 }
 
 .dead_space {
-  border: 1px solid red;
+  border: 1px solid transparent;
   margin: 22%
 }
 
@@ -129,10 +129,7 @@
 
 @media only screen and (min-width:1050px) {
   .whole {
-    /* background-size: cover; */
     background-position: 50% 50%;
-    /* opacity: 0.95; */
-    /* height: 100vh; */
   }
 
   .welcome {
@@ -183,9 +180,7 @@
 
 @media only screen and (min-width:1400px) {
   .whole {
-    /* background-size: cover; */
     background-position: 50% 50%;
-    /* opacity: 0.95; */
   }
 
   .welcome {
