@@ -129,9 +129,9 @@
 
 @media only screen and (min-width:1050px) {
   .whole {
-    background-size: cover;
+    /* background-size: cover; */
     background-position: 50% 50%;
-    opacity: 0.95;
+    /* opacity: 0.95; */
     /* height: 100vh; */
   }
 
@@ -183,10 +183,9 @@
 
 @media only screen and (min-width:1400px) {
   .whole {
-    background-size: cover;
+    /* background-size: cover; */
     background-position: 50% 50%;
-    opacity: 0.95;
-    /* height: 100%; */
+    /* opacity: 0.95; */
   }
 
   .welcome {
@@ -217,28 +216,27 @@
     margin-right: 45%;
   }
 
-  .register {
-    font-size: 2.5vw;
-    margin: 50px 50px 20px 0px;
-    margin-right: 3%;
-
-  }
-
-  .guest {
-    border-radius: 7px;
-    font-size: 2.5vw;
-    margin: 80px 0px;
-    margin-left: 3%;
-
+  .dead_space {
+    margin: 5%
   }
 
   .nonusers {
-    margin: 150px 0px;
-    margin-top: 40%;
-    margin-bottom: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0;
+    margin-bottom: 5%;
   }
 
+  .register {
+    position: relative;
+    left: -50%;
+    font-size: 2.5vw;
+  }
+
+  .guest {
+    position: relative;
+    left: -50%;
+    font-size: 2.5vw;
+  }
 }
-
-
-@media only screen and (min-width:1700px) {}
