@@ -45,10 +45,21 @@
   font-weight: bold;
 }
 
+.dead_space {
+  border: 1px solid transparent;
+  margin: 22%
+}
+
+.nonusers {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 50%; */
+  padding: 0px 100px;
+}
+
 .register {
   border-radius: 7px;
   font-size: 4.5vw;
-
   margin-bottom: 5%;
   font-family: 'Roboto', sans-serif;
   text-decoration: underline;
@@ -68,12 +79,7 @@
   text-decoration: underline;
 }
 
-.nonusers {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50%;
-  padding: 0px 100px;
-}
+
 
 /* View for iPad mini*/
 
