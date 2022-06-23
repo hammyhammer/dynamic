@@ -35,7 +35,7 @@ export default function Login(props) {
 
   const guestPath = () => {
     const user = loginUser(guest);
-    props.setCurrentUser(user);
+    // props.setCurrentUser(user);
     navigate('/movements');
     console.log(guest);
     console.log(props.currentUser)

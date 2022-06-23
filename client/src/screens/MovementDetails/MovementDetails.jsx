@@ -73,7 +73,7 @@ export default function MovementDetails(props) {
               <PostNote currentUser={props.currentUser} handleNoteCreate={handleNoteCreate} />
               <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
 
-              {/* <p className={random_detailcss.guest}>Only users can have private notes. guest can shrea entries</p> */}
+              <p className={random_detailcss.guest}>Only users can have private notes.</p>
             </>
             :
             <>
