@@ -8,8 +8,8 @@ export default function Login(props) {
   const [password, setPassword] = useState('');
 
   const [guest, setGuest] = useState({
-    username: "guest",
-    email: "guest@aol.com",
+    username: "dragon",
+    email: "dragon@aol.com",
     password: 123456,
   });
 

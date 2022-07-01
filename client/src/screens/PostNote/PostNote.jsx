@@ -2,13 +2,11 @@ import { useState } from 'react';
 import postcss from './PostNote.module.css';
 
 export default function PostNote(props) {
-  const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const note = {
-      title,
       content
     }
     props.handleNoteCreate(note);
