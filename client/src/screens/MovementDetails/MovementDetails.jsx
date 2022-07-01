@@ -60,25 +60,9 @@ export default function MovementDetails(props) {
           className={random_detailcss.image}
         />
 
-        {props.currentUser ?
-          <>
-            <PostNote currentUser={props.currentUser} handleNoteCreate={handleNoteCreate} />
-            <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
-          </>
-          :
-          props.currentUser === false ?
-            <>
-              <PostNote currentUser={props.currentUser} handleNoteCreate={handleNoteCreate} />
-              <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
+        <PostNote currentUser={props.currentUser} handleNoteCreate={handleNoteCreate} />
+        <Notes handleNoteEdit={handleNoteEdit} notes={notes} movement={movement} currentUser={props.currentUser} handleNoteDelete={handleNoteDelete} />
 
-              <p className={random_detailcss.guest}>Only users can have private notes.</p>
-            </>
-
-            :
-            <>
-              No dice
-            </>
-        }
       </Layout>
 
     </div>
