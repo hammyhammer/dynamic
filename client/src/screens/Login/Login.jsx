@@ -25,8 +25,6 @@ export default function Login(props) {
     const res = await loginUser(user);
     props.setCurrentUser(res);
     navigate('/movements');
-    console.log(guest);
-    console.log(props.currentUser)
   };
 
   const registerPath = () => {
@@ -37,8 +35,6 @@ export default function Login(props) {
     const user = loginUser(guest);
     // props.setCurrentUser(user);
     navigate('/movements');
-    console.log(guest);
-    console.log(props.currentUser)
   };
 
   return (

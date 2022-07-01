@@ -42,8 +42,6 @@ export default function MovementDetails(props) {
   let description = movement?.description;
   let cues = description?.split(". ");
 
-  console.log(props.currentUser)
-
   return (
     <div className={random_detailcss.whole}>
       <Layout>
@@ -75,6 +73,7 @@ export default function MovementDetails(props) {
 
               <p className={random_detailcss.guest}>Only users can have private notes.</p>
             </>
+
             :
             <>
               No dice
