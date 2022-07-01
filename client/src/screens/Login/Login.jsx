@@ -9,8 +9,8 @@ export default function Login(props) {
 
   const [guest, setGuest] = useState({
     username: "guest",
-    email: "guest@guest.com",
-    password: "guest",
+    email: "guest@aol.com",
+    password: 123456,
   });
 
   const navigate = useNavigate();
