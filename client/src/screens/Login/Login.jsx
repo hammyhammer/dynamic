@@ -35,6 +35,8 @@ export default function Login(props) {
     const user = loginUser(guest);
     // props.setCurrentUser(user);
     navigate('/movements');
+    window.location.reload(false);
+
   };
 
   return (
