@@ -19,24 +19,11 @@ export default function PostNote(props) {
       {props.currentUser ?
 
         <form onSubmit={handleSubmit}>
-          {/* <input className={postcss.title} type="text" value={title} placeholder="Entry Title" onChange={(e) => setTitle(e.target.value)} /> */}
           <input className={postcss.content} type="text" value={content} placeholder="How did you do today?" onChange={(e) => setContent(e.target.value)} />
           <button className={postcss.button}>Save</button>
-          {/* <p style={{ color: 'white' }}>Only Users can have private notes.</p> */}
-
         </form>
         :
-        props.currentUser === false ?
-          <div>
-            {/* <p style={{ color: 'white' }}>Only users can have private notes.</p> */}
-            <form onSubmit={handleSubmit}>
-              {/* <input className={postcss.title} type="text" value={title} placeholder="Entry Title" onChange={(e) => setTitle(e.target.value)} /> */}
-              <input className={postcss.content} type="text" value={content} placeholder="How did you do today?" onChange={(e) => setContent(e.target.value)} />
-              {/* <button className={postcss.button}>Save Entry</button> */}
-            </form>
-          </div>
-          :
-          null
+        null
       }
     </div >
   );
