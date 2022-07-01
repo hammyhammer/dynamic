@@ -42,6 +42,8 @@ export default function MovementDetails(props) {
   let description = movement?.description;
   let cues = description?.split(". ");
 
+  console.log(props.currentUser)
+
   return (
     <div className={random_detailcss.whole}>
       <Layout>
