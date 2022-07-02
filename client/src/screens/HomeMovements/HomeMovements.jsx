@@ -17,11 +17,11 @@ export default function HomeMovements(props) {
         <br />
 
         {/* <Link className={homecss.mini_titles} to='movements/custom'> */}
-        <p className={homecss.custom_title}>Customize Your Training (Coming Soon)</p>
+        {/* <p className={homecss.custom_title}>Customize Your Training (Coming Soon)</p>
         <img src="https://media.istockphoto.com/photos/gym-background-with-clipboard-mockup-notepad-and-fitness-equipment-picture-id1210692942?k=20&m=1210692942&s=612x612&w=0&h=b2pFEdARCXBpMVbFTse_kYctLioA011CXgt6b6Fgl6Y="
           alt="Clipboard"
           className={homecss.default_training_img}
-        />
+        /> */}
         {/* </Link> */}
       </Layout>
     </div >
