@@ -16,7 +16,7 @@ export default function PostNote(props) {
     <div className={postcss.whole}>
       {props.currentUser ?
 
-        <form onSubmit={handleSubmit}>
+        <form className={postcss.input_save} onSubmit={handleSubmit}>
           <input className={postcss.content} type="text" value={content} placeholder="How did you do today?" onChange={(e) => setContent(e.target.value)} />
           <button className={postcss.button}>Save</button>
         </form>
