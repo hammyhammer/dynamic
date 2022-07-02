@@ -1,5 +1,7 @@
 /* Default Phone view (iPhone 6/7/8) */
 .whole {
+  display: flex;
+  flex-direction: column;
   background-image: url("https://images.pexels.com/photos/6455928/pexels-photo-6455928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: 75% 25%;
@@ -51,6 +53,7 @@
 }
 
 .nonusers {
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
@@ -84,6 +87,7 @@
 
 @media only screen and (min-width:760px) {
   .welcome {
+    height: none;
     font-size: 9vw;
   }
 
@@ -110,11 +114,12 @@
   }
 
   .dead_space {
-    margin: 25%
+    /* margin: 25% */
   }
 
   .nonusers {
     font-size: 5vw;
+    margin: 0px;
     padding: 0px 200px;
   }
 
