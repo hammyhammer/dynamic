@@ -51,11 +51,12 @@
 
   .content {
     padding: 5px;
-    width: 300px;
+    width: 350px;
   }
 
   .button {
-    margin: 5px 500px 0px 500px;
+    width: 100px;
+    /* margin: 5px 500px 0px 500px; */
     font-size: 1.5vw;
     padding: 2px 0px;
   }

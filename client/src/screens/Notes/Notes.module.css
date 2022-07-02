@@ -121,7 +121,9 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 3px 1px;
-    margin: 10px 220px 42px 220px;
+    width: 40%;
+    margin: 10px 00px 42px 220px;
+    font-size: 1.5vw;
   }
 
   .edit_delete {
