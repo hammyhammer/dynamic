@@ -9,22 +9,10 @@ export default function Movements(props) {
     return `${monthName} ${current.getDate()}, ${current.getFullYear()}`;
   }
 
-  // const shuffle = (array) => {
-  //   let currentIndex = array.length, randomIndex
-  //   while (currentIndex != 0) {
-  //     randomIndex = Math.floor(Math.random() * currentIndex);
-  //     currentIndex--;
-
-  //     [array[currentIndex], array[randomIndex]] = [
-  //       array[randomIndex], array[currentIndex]]
-
-  //   }
-  //   return array
-  // }
-  // shuffle(props.movements)
-
-
+  // Variable shuffled shuffles the array of movements randomly. 
   let shuffled = props.movements.sort(() => 0.5 - Math.random());
+
+  // Reinitialized shuffled to only spit out 9 of the movements.  
   shuffled = shuffled.slice(0, 9)
 
   return (
