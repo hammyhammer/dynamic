@@ -1,14 +1,21 @@
 /* Default Phone view (iPhone 6/7/8) */
+html,
+body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
 .whole {
   display: flex;
   flex-direction: column;
   background-image: url("https://images.pexels.com/photos/6455928/pexels-photo-6455928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
-  background-position: 75% 25%;
+  background-position: center center;
   background-repeat: none;
   opacity: 0.95;
   border: 2px solid black;
   height: 100vh;
+  padding: 0;
 }
 
 .welcome {
@@ -53,7 +60,7 @@
 }
 
 .nonusers {
-  height: auto;
+  /* height: 200vh; */
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
