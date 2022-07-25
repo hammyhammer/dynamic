@@ -60,7 +60,6 @@ body {
 }
 
 .nonusers {
-  /* height: 200vh; */
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
@@ -141,7 +140,8 @@ body {
 
 @media only screen and (min-width:1050px) {
   .whole {
-    background-position: 50% 50%;
+    height: 200vh;
+    /* background-position: 50% 50%; */
   }
 
   .welcome {
@@ -192,6 +192,7 @@ body {
 
 @media only screen and (min-width:1400px) {
   .whole {
+    height: 150vh;
     background-position: 50% 50%;
   }
 
@@ -228,22 +229,19 @@ body {
   }
 
   .nonusers {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding: 0;
-    margin-bottom: 5%;
+    /* padding: 0px 300px; */
+
   }
 
   .register {
-    position: relative;
-    left: -50%;
-    font-size: 2.5vw;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 2vw;
   }
 
   .guest {
-    position: relative;
-    left: -50%;
-    font-size: 2.5vw;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 2vw;
   }
 }
