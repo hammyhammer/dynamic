@@ -1,3 +1,7 @@
+.whole {
+  background-color: black;
+}
+
 .input_save {
   display: flex;
   flex-direction: column;

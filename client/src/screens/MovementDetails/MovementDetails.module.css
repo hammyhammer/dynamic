@@ -1,6 +1,7 @@
 .whole {
   background-color: black;
   height: 100vh;
+  border: 2px solid red;
 }
 
 .name {
