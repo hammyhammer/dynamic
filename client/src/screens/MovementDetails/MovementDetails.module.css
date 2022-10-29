@@ -1,6 +1,6 @@
 .whole {
   background-color: black;
-  height: auto;
+  height: 100vh;
 }
 
 .name {
@@ -27,6 +27,10 @@
 }
 
 @media only screen and (min-width:760px) {
+  .whole {
+    height: auto;
+  }
+
   .name {
     font-size: 5vw;
     margin: 10px 0px 0px 0px;
@@ -39,7 +43,7 @@
 
 @media only screen and (min-width:1250px) {
   .whole {
-    height: 130vh;
+    height: auto;
   }
 
   .name {

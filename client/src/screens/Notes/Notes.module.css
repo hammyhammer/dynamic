@@ -1,7 +1,6 @@
 .whole {
   background-color: black;
   padding: 10px 0px;
-  /* border: 1px solid black; */
   /* margin: 10px 0px; */
   overflow-y: scroll;
   max-height: 30vh;
@@ -92,7 +91,7 @@
   .whole {
     margin: 10px 0px;
     overflow-y: scroll;
-    max-height: 30vh;
+    /* max-height: 30vh; */
   }
 
   .container {

@@ -35,7 +35,7 @@ export default function Notes(props) {
                   </div>
                 </>
                 :
-                null
+                <div>test</div>
             }
           </div>
         ))
