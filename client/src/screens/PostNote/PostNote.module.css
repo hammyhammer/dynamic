@@ -1,5 +1,6 @@
 .whole {
   background-color: black;
+  height: 20vh;
 }
 
 .input_save {
@@ -43,7 +44,7 @@
 
   .button {
     margin: 10px 300px 0px 300px;
-    font-size: 3.25vw;
+    font-size: 2.25vw;
   }
 }
 
