@@ -12,11 +12,10 @@ export default function Notes(props) {
     }
     getUser();
   }, []);
-
   return (
     <div className={notescss.whole}>
       {props.notes &&
-        props.notes.map(note => (
+        props.notes.flat(1).reverse().map(note => (
           <div key={note?.id}>
             {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
