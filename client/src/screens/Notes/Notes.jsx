@@ -12,10 +12,17 @@ export default function Notes(props) {
     }
     getUser();
   }, []);
+
+  const sortDate = (a, b) => {
+    return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+  }
+
+  let entries = props.notes.flat(1).sort(sortDate);
+
   return (
     <div className={notescss.whole}>
       {props.notes &&
-        props.notes.flat(1).reverse().map(note => (
+        entries.map(note => (
           <div key={note?.id}>
             {
               currentUser?.id === note.user.id && note.movement_id === props.movement.id ?
