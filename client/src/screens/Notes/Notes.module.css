@@ -2,13 +2,7 @@
   background-color: black;
   padding: 10px 0px;
   /* margin: 10px 0px; */
-  overflow-y: scroll;
-  max-height: 30vh;
-}
-
-.test {
-  border: 4px solid pink;
-  max-height: 10px;
+  /* overflow-y: scroll; */
 }
 
 .container {
@@ -63,6 +57,7 @@
   .whole {
     height: 30vh;
     padding: 30px 0px;
+    overflow-y: scroll;
 
   }
 
