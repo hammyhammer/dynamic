@@ -47,6 +47,7 @@
   top: 23.5%;
   color: white;
   font-family: monospace;
+  opacity: 0;
 }
 
 .custom_title {
@@ -142,10 +143,12 @@
   .mini_titles:hover .random_title {
     visibility: visible;
     opacity: 1;
-    /* transition: all 0.5s ease-out; */
-    transition-duration: 3s;
+    transition-duration: 1.5s;
+    width: auto
+  }
 
-
+  .mini_titles:hover {
+    opacity: 0.5;
   }
 
   .custom_title_guest {
