@@ -39,12 +39,7 @@
   font-size: 5vw;
 }
 
-.mini_titles:hover .random_title {
-  display: inline;
-}
-
 .random_title {
-  display: none;
   position: absolute;
   background-color: black;
   right: 30%;
@@ -135,6 +130,21 @@
 
   .mini_titles {
     font-size: 4vw;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .random_title {
+    display: none;
+  }
+
+  .mini_titles:hover {
+    background-color: rgb(198, 195, 195);
+
+  }
+
+  .mini_titles:hover .random_title {
+    display: inline;
   }
 
   .custom_title_guest {
