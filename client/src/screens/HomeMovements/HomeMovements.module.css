@@ -130,21 +130,22 @@
 
   .mini_titles {
     font-size: 4vw;
-    transition: all 0.5s ease-in-out;
+    transition-duration: 3s;
 
   }
 
   .random_title {
-    display: none;
-  }
-
-  .mini_titles:hover {
-    background-color: rgb(198, 195, 195);
-
+    visibility: hidden;
+    opacity: 0;
   }
 
   .mini_titles:hover .random_title {
-    display: inline;
+    visibility: visible;
+    opacity: 1;
+    /* transition: all 0.5s ease-out; */
+    transition-duration: 3s;
+
+
   }
 
   .custom_title_guest {
