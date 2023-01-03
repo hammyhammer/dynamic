@@ -143,13 +143,24 @@
   .mini_titles:hover .random_title {
     visibility: visible;
     opacity: 1;
-    transition-duration: 1.5s;
-    width: auto
+    transform: translate(0, 100);
+    transition-duration: 2s;
+    right: 25%;
+    width: 80%
   }
 
-  .mini_titles:hover {
+
+  /* position: absolute;
+  background-color: black;
+  right: 30%;
+  width: 70%;
+  top: 23.5%;
+  color: white;
+  font-family: monospace;
+  opacity: 0; */
+  /* .mini_titles:hover {
     opacity: 0.5;
-  }
+  } */
 
   .custom_title_guest {
     font-size: 3vw;
