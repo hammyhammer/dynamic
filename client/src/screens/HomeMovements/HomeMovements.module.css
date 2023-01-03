@@ -39,7 +39,12 @@
   font-size: 5vw;
 }
 
+.mini_titles:hover .random_title {
+  display: inline;
+}
+
 .random_title {
+  display: none;
   position: absolute;
   background-color: black;
   right: 30%;
